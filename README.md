@@ -12,4 +12,5 @@ python manage.py runserver
 package.json下运行
 ```shell
 npm run serve
+1234
 ```
