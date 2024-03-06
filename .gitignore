@@ -1,0 +1,7 @@
+# Ignore Git files
+.git/
+
+# Ignore IntelliJ IDEA files
+.idea/
+*.iml
+out/
