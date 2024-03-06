@@ -1,4 +1,4 @@
-@import url(https://fonts.font.im/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600);
+@import url('./fonts/fonts.css');
 
 * {
     -webkit-font-smoothing: antialiased;

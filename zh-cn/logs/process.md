@@ -17,6 +17,6 @@
 ## 文档更新日志
 
 
-- 切换CDN加速，解决 fonts.googleapis.com 访问速度慢   2024年3月7日
+- 切换CDN加速，解决 fonts.googleapis.com、docsify.min.js 访问速度慢   2024年3月7日
 - 侧边栏状态更新   2024年3月7日
 - 项目文档搭建   2024年3月6日
