@@ -20,10 +20,10 @@ docsify serve
 
 ### 3. 编写项目文档
 
-#### 1）. 编辑 md 文件
+#### 1）编辑 md 文件
 在 `/zh-cn` 路径下 `README.md` 文件中编辑中文文档，在 `/en` 路径下 `README.md` 文件中编辑英文文档
 
-#### 2）. 本地预览更改
+#### 2）本地预览更改
 ```bash
 docsify serve
 ```
