@@ -2,7 +2,7 @@ import jwt
 import datetime
 from jwt import exceptions
 
-SECRET_KEY = "woshishabi"
+SECRET_KEY = "kaomita"  # 秘钥
 
 
 # 得到token

@@ -3,7 +3,7 @@ from app.utils.jwtAuth import parse_payload
 from app.utils.jsonResponse import json_response
 
 
-# 中间件token验证
+# 中间件token验证,验证token是否有效,即是否登录
 class TokenMiddleware(MiddlewareMixin):
     def process_request(self, request):
         url = request.get_full_path()

@@ -1,5 +1,5 @@
 from django.db import models
-
+# 将模型映射到数据库中的表
 
 # 用户表
 class User(models.Model):
