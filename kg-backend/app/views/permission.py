@@ -33,6 +33,7 @@ def change_permission(request):
         return json_response(203, '请求方式错误')
 
 
+# 授予管理员权限
 @csrf_exempt
 def grant_admin(request):
     if request.method == 'POST':
@@ -47,6 +48,7 @@ def grant_admin(request):
         return json_response(203, '请求方式错误')
 
 
+# 删除用户
 @csrf_exempt
 def delete_user(request):
     if request.method == 'POST':

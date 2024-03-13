@@ -3,7 +3,7 @@ from django.utils.deprecation import MiddlewareMixin
 from app.models import User, Permission, UserPermission
 
 
-# 中间件权限验证
+# 中间件权限验证,只有管理员才能查看和更改用户权限
 class PermissionMiddleware(MiddlewareMixin):
     def process_request(self, request):
         url = request.get_full_path()
