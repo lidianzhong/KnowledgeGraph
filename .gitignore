@@ -25,3 +25,7 @@ pnpm-debug.log*
 
 # Sublime Text files
 **/__pycache__/
+
+# 忽略数据缓存文件
+kg-backend/app/utils/testData/1.txt
+kg-backend/app/utils/testData/predictions_list.json
