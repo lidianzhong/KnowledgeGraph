@@ -1,6 +1,6 @@
 ## 安装依赖库
 ```shell
-pip install -r requestment.txt
+pip install -r requirements.txt
 ```
 
 运行：
