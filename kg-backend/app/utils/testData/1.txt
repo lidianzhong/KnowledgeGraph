@@ -1,9 +1,0 @@
-CPU (Central Processing Unit): The primary component of a computer responsible for executing instructions and performing calculations.
-
-RAM (Random Access Memory): Volatile memory used by computers to temporarily store data and execute programs.
-
-Operating System (OS): Software that manages computer hardware and provides a platform for running applications.
-
-Hard Drive: A non-volatile storage device used to store data permanently on a computer.
-
-File System: Software that organizes and manages the storage of data on a computer's storage devices, such as hard drives.
