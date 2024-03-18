@@ -17,6 +17,8 @@ def get_user_permission(request):
     else:
         return json_response(203, '请求方式错误')
 
+
+# 修改用户权限
 @csrf_exempt
 def change_permission(request):
     if request.method == 'POST':
