@@ -129,6 +129,8 @@ def get_user_list(request):
     else:
         return json_response(203, "请求方式错误")
 
+
+# 注销用户
 @csrf_exempt
 def delete_self(request):
     if request.method == 'GET':
@@ -142,6 +144,8 @@ def delete_self(request):
     else:
         return json_response(203, "请求方式错误")
 
+
+# 发送验证码
 @csrf_exempt
 def verification_code(request):
     if request.method == 'POST':
@@ -160,6 +164,7 @@ def verification_code(request):
         return json_response(200, "邮件发送成功，有效期 5 分钟")
 
 
+# 生成验证码
 @csrf_exempt
 def Email_Code():
     code_ = ''
@@ -167,6 +172,7 @@ def Email_Code():
     for k in range(5):
         code_ += code_str[randint(0, 35)]
     return code_
+
 
 @csrf_exempt
 def test(response):

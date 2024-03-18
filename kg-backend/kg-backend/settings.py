@@ -176,16 +176,16 @@ EMAIL_USER_TLS = True
 # EMAIL_USER_TLS = False
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
-# # redis 的配置文件
-# CACHES = {
-#     "default": {
-#         "BACKEND": "django_redis.cache.RedisCache",
-#         "LOCATION": "redis://127.0.0.1:6379",
-#         "OPTIONS": {
-#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-#             "CONNECTION_POOL_KWARGS": {"max_connections": 100}
-#             # "PASSWORD": "密码",
-#         }
-#     }
-# }
+# redis 的配置文件
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "CONNECTION_POOL_KWARGS": {"max_connections": 100}
+            # "PASSWORD": "密码",
+        }
+    }
+}
 
