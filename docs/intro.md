@@ -2,46 +2,57 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 项目概述
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## 项目简介
 
-## Getting Started
+本项目名为《知识图谱智能构建系统》。
 
-Get started by **creating a new site**.
+## 软件截图
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+<p float="left">
+  <img src="https://s2.loli.net/2024/05/21/ycwx9MZ5hXH72SD.png" width="50%" />
+  <img src="https://s2.loli.net/2024/05/21/adI5cT3hV8O1Yxi.png" width="50%" /> 
+</p>
 
-### What you'll need
+## 在线演示 | [DEMO](http://121.41.15.223/)
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+:::tip[TIP]
 
-## Generate a new site
+进入登录页，使用下面的账号进行访问。
 
-Generate a new Docusaurus site using the **classic template**.
+:::
 
-The classic template will automatically be added to your project after you run the command:
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+<Tabs>
+  <TabItem value="user" label="普通用户" default>
+    普通用户账号：`yuan1995309@163.com`
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+    普通用户密码：`123456`
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+  </TabItem>
+  <TabItem value="admin" label="管理员">
+    管理员账号：`3310118198@qq.com`
 
-## Start your site
+    管理员密码：`123456`
 
-Run the development server:
+  </TabItem>
+  <TabItem value="super admin" label="超级管理员">
+    超级管理员账号：`admin@qq.com`
 
-```bash
-cd my-website
-npm run start
-```
+    超级管理员密码：`123456`
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+  </TabItem>
+</Tabs>
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+---
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## 相关资源
+
+**项目 Github 地址：[点此跳转](https://github.com/lidianzhong/KnowledgeGraph)**
+
+**项目 API 文档：[点此跳转](https://apifox.com/apidoc/shared-fa0f1f57-5099-40f3-8a64-79c83fce82f6)**
+
+**项目文档地址：[点此跳转](#)**

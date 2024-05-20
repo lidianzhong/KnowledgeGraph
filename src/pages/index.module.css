@@ -21,3 +21,13 @@
   align-items: center;
   justify-content: center;
 }
+
+.heroBg {
+  background-image: url(login-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.heroFullsize {
+  height: 90vh;
+}
