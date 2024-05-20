@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkg_docusaurus=self.webpackChunkkg_docusaurus||[]).push([[903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/kg-doc/blog","blogTitle":"Blog"}')}}]);
