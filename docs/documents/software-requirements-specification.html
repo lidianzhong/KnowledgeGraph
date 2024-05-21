@@ -5,10 +5,704 @@
 <meta name="generator" content="Docusaurus v3.3.2">
 <title data-rh="true">软件需求规格说明书 | 知识图谱智能构建系统</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://lidianzhong.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://lidianzhong.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://lidianzhong.github.io/docs/documents/software-requirements-specification"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="软件需求规格说明书 | 知识图谱智能构建系统"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://lidianzhong.github.io/docs/documents/software-requirements-specification"><link data-rh="true" rel="alternate" href="https://lidianzhong.github.io/docs/documents/software-requirements-specification" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://lidianzhong.github.io/docs/documents/software-requirements-specification" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="知识图谱智能构建系统 RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="知识图谱智能构建系统 Atom Feed"><link rel="stylesheet" href="/assets/css/styles.953a7dcb.css">
-<script src="/assets/js/runtime~main.57e8b972.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.409ac434.js" defer="defer"></script>
 <script src="/assets/js/main.90e76423.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/favicon.ico" alt="知识图谱智能构建系统 Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/favicon.ico" alt="知识图谱智能构建系统 Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">知识图谱智能构建系统</b></a><a href="http://121.41.15.223/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">在线演示<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a href="https://apifox.com/apidoc/shared-fa0f1f57-5099-40f3-8a64-79c83fce82f6" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">API文档<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">项目文档</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/lidianzhong/KnowledgeGraph" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a class="navbar__item navbar__link" href="/blog">会议记录</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="切换浅色/暗黑模式（当前为浅色模式）" aria-label="切换浅色/暗黑模式（当前为浅色模式）" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">项目概述</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/项目文档">项目文档</a><button aria-label="折叠侧边栏分类 &#x27;项目文档&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/documents/document-intro">文档介绍</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/documents/software-detailed-design-specification">软件详细设计说明书</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/documents/software-requirements-specification">软件需求规格说明书</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/documents/software-summary-design-specification">软件概要设计说明书</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/documents/software-test-report">软件测试报告</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/开始上手">开始上手</a><button aria-label="展开侧边栏分类 &#x27;开始上手&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/category/项目文档"><span itemprop="name">项目文档</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">软件需求规格说明书</span><meta itemprop="position" content="2"></li></ul></nav><div class="theme-doc-markdown markdown"><header><h1>软件需求规格说明书</h1></header><p>软件需求规格说明书</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/lidianzhong/KnowledgeGraph/blob/doc/docs/documents/software-requirements-specification.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/documents/software-detailed-design-specification"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">软件详细设计说明书</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/documents/software-summary-design-specification"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">软件概要设计说明书</div></a></nav></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 知识图谱智能构建系统，软件工程课程项目。</div></div></div></footer></div>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/favicon.ico" alt="知识图谱智能构建系统 Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/favicon.ico" alt="知识图谱智能构建系统 Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">知识图谱智能构建系统</b></a><a href="http://121.41.15.223/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">在线演示<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a href="https://apifox.com/apidoc/shared-fa0f1f57-5099-40f3-8a64-79c83fce82f6" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">API文档<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">项目文档</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/lidianzhong/KnowledgeGraph" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><a class="navbar__item navbar__link" href="/blog">会议记录</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="切换浅色/暗黑模式（当前为浅色模式）" aria-label="切换浅色/暗黑模式（当前为浅色模式）" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">项目概述</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/项目文档">项目文档</a><button aria-label="折叠侧边栏分类 &#x27;项目文档&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/documents/document-intro">文档介绍</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/documents/software-requirements-specification">软件需求规格说明书</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/documents/software-summary-design-specification">软件概要设计说明书</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/documents/software-detailed-design-specification">软件详细设计说明书</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/documents/software-test-report">软件测试报告</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/开始上手">开始上手</a><button aria-label="展开侧边栏分类 &#x27;开始上手&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/category/项目文档"><span itemprop="name">项目文档</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">软件需求规格说明书</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><h1>软件需求规格说明书</h1>
+<p>版本变更历史</p>
+<table><thead><tr><th>版本</th><th>提交日期</th><th>主要编制人</th><th>审核人</th><th>版本说明</th></tr></thead><tbody><tr><td>v1.0</td><td>2024.03.28</td><td>张黄钰</td><td>刘佳乐</td><td>初始版本，基本完成了主要内容。</td></tr><tr><td>v2.0</td><td>2024.04.04</td><td>张黄钰</td><td>袁笑</td><td>在初始版本的基础上进一步完善。</td></tr><tr><td>v3.0</td><td>2024.04.11</td><td>张黄钰</td><td>李解放</td><td>过渡版本，进一步优化和完善了内容。</td></tr><tr><td>v4.0</td><td>2024.04.18</td><td>张黄钰</td><td>李佃中</td><td>最终版本，敲定和优化了若干细节。</td></tr></tbody></table>
+<h1>1 引言</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="11-编写目的">1.1 编写目的<a href="#11-编写目的" class="hash-link" aria-label="1.1 编写目的的直接链接" title="1.1 编写目的的直接链接">​</a></h2>
+<p>该软件需求说明书旨在确保用户、软件开发者、分析人员和测试人员对该软件的初始规范有一个共同的理解，包括功能需求、性能需求和数据需求的具体说明，功能的含义，使用背景和范围的阐述。</p>
+<p>本文档的预期读者包括：需求分析人员、设计人员、开发人  员、项目管理人员、测试人员、用户。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="12-背景">1.2 背景<a href="#12-背景" class="hash-link" aria-label="1.2 背景的直接链接" title="1.2 背景的直接链接">​</a></h2>
+<p>随着信息时代的不断发展，人们对于获取最新、最准确的知识需求日益增加。然而，传统的信息检索系统往往存在着更新速度慢、准确度不高等问题，无法满足用户对于快速获取最新知识的迫切需求。为了解决这一难题，我们项目小组决定开发一款名为“知识图谱智能构建系统”的智能更新系统。</p>
+<p>“知识图谱智能构建系统”旨在为用户提供一个高效、准确并且时刻更新的信息检索平台。通过构建和维护一个完善的知识图谱，系统将能够以更加智能的方式对信息进行组织、检索和更新，从而极大地改善当前信息检索系统的短板。与传统的基于关键词检索的系统相比，知识图谱系统能够更好地理解用户查询的意图，提供更加精准的搜索结果。</p>
+<p>该系统的研发和应用将在多个方面产生积极影响。首先，它将推动知识的传播和共享，促进不同领域间的交叉融合和跨界合作，为社会的进步和发展提供有力支持。其次，通过提供时刻更新的信息检索服务，该系统将帮助用户及时获取最新的科研成果、行业动态等信息，为个人学习、工作和创新提供重要支持。</p>
+<p>“知识图谱智能构建系统”的开发与应用将成为信息时代的重要里程碑，为用户提供更加智能、高效的知识获取体验，推动社会的发展和进步。</p>
+<p>说明待开发的软件系统的名称，即项目名称；</p>
+<p>本项目的任务提出者、开发者、用户及实施单位；</p>
+<p>该软件系统同其他系统的关系。</p>
+<p>该软件系统的开发目的，解决什么问题。</p>
+<p><strong>注意：以上内容应成段叙述，不要 列提纲。</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="13-术语和缩略词">1.3 术语和缩略词<a href="#13-术语和缩略词" class="hash-link" aria-label="1.3 术语和缩略词的直接链接" title="1.3 术语和缩略词的直接链接">​</a></h2>
+<p>列出本文件中用到的专门术语的定义和缩略词的全称。</p>
+<p>（1）文献：分为两类，一类是由用户上传，另一类是由系统后台提供。由用户上传的是每一个句子的文件，文件中可以包含多个句子，每个句子调用模型提取出最终显示到知识图谱中的实体和关系。后台提供的是文献库，用作候选段，当模型在用户提供的文件中无法解析出答案时，将在候选段中查找。</p>
+<p>（2）问答对：由模型根据用户提供的文字，以及后台备用的文献库中查找，提取出一组问题和答案，称之为问答对。部分字段可能无法得到问答对。</p>
+<p>（3）三元组：由问答对提取三元组，即实体 1——关系——实体 2，得到三元组即为模型调用的结束。三元组还需要经过处理，变为点集和边集才能够用于知识图谱的显示。</p>
+<p>（4）知识图谱及自动更新：在前端显示的知识图谱是连接到三元组保存的.json 实现的。自动更新实现的原理是设置每隔固定时长反复调用文件，来更新图谱。图谱的显示由二维的三维的区别，三维比二维的可视化效果更好，更易于用户直观感受实体之间联系。</p>
+<p>（5）权限管理：该功能模块主要用于系统管理员管理用户对数据库的操作权限。例如：是否允许删除文献，是否允许修改问答对，是否拥有管理员角色（当前系统最高权限）等。</p>
+<p>（6）导出：在知识图谱模块，用户可以查看图谱的同时，也可以将图谱导出为 png 或 jpg 文件，便于用户具体地查看实体以及之间的联系。</p>
+<p>（7）手动更新：当用户需要及时地查  看图谱的更新状况时，系统提供了强制更新接口，使得三元组文件的最新状态可以立刻反馈到图谱可视化结果中。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="14-参考资料">1.4 参考资料<a href="#14-参考资料" class="hash-link" aria-label="1.4 参考资料的直接链接" title="1.4 参考资料的直接链接">​</a></h2>
+<p>列出相关的参考资料，如本项目的经核准的计划任务书或合同、上级机关的批文；</p>
+<p>属于本项目的其他已发表的文件；</p>
+<p>本文件中各处引用的文件、资料、包括所要用到的软件开发标准。</p>
+<p>列出这些文件资料的标题、文件编号、发表日期和出版单位，说明能够得到这些文件资料的来源。</p>
+<p><strong>格式：请参照《华中农业大学学位（毕业）论文撰写规范-自然科学类》7.5 参考文献一节的要求。</strong></p>
+<ol>
+<li>
+<p>窦万峰.软件工程方法与实践(第三版).北京：机械工业出版社，2016.</p>
+</li>
+<li>
+<p>窦万峰，蒋锁良，杨俊 . 软件工程实验教程（第三版）. 北京：机械工业出版社，2016.</p>
+</li>
+<li>
+<p>保罗 C.乔根森 . 软件测试（第四版）. 北京：机械工业出版社，2017.</p>
+</li>
+<li>
+<p>陈定甲,淳鑫.基于 Vue 技术的通用知识图谱问答系统设计与实现[J].装备制造技术,2022,No.331(07):97-99.</p>
+</li>
+</ol>
+<h1>2 任务概述</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="21-项目概述">2.1 项目概述<a href="#21-项目概述" class="hash-link" aria-label="2.1 项目概述的直接链接" title="2.1 项目概述的直接链接">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="211-项目来源及背景">2.1.1 项目来源及背景<a href="#211-项目来源及背景" class="hash-link" aria-label="2.1.1 项目来源及背景的直接链接" title="2.1.1 项目来源及背景的直接链接">​</a></h3>
+<p>随着互联网的迅猛发展和信息爆炸式增长，人们在获取知  识和信息方面面临了新的挑战。然而，当前的信息检索系统存在着一个显著的问题，即知识的时效性和准确性无法得到有效保证。对于涉及科技、医学、法律等领域的关键信息，其更新速度和变化频率极高，传统的数据库和搜索引擎已经无法满足用户的需求。</p>
+<p>为了解决这一难题，本小组计划开发一款名为“知识图谱智能更新系统”的软件。该系统将利用人工智能和知识图谱等先进技术，旨在实现知识的实时更新和准确推送，帮助用户快速获得最新且可靠的信息。</p>
+<p>该系统的核心技术是由指导老师——王颖带队的实验室所提供的知识图谱三元组抽取模型，该模型拥有强大的自然语言处理能力。通过结合大量的数据源，有望构建一个庞大且全面的知识图谱网络，将各种知识点以及它们之间的关系进行整合和归纳。该项目是基于知识图谱自动更新平台项目的延伸。通过搭建知识图谱智能更新平台，可以实现文本知识的自动抽取、整合和更新，提高知识图谱的准确性、完整性和实用性，该系统能够有效的帮助提高学术研究的效率和准确性。</p>
+<p>在系统运行过程中，小组成员将不断收集、分析和更新相关领域的最新信息。通过对各种专业领域的权威性资源进行监测和挖掘，我们能够及时发现知识图谱中的过期或错误信息，并进行修正和更新。这样，无论用户查询何种信息，我们都可以确保他们获取到最新、最准确的答案。</p>
+<p>“知识图谱智能更新系统”将为用户提供一个高效、准确并且时刻更新的信息检索平台。它将极大地改善当前信息检索系统的短板，满足用户在快速获取最新知识方面的需求。该系统的研发和应用，将推动知识的传播和共享，为社会进步和个人发展提供有力支持。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="212-项目目标">2.1.2 项目目标<a href="#212-项目目标" class="hash-link" aria-label="2.1.2 项目目标的直接链接" title="2.1.2 项目目标的直接链接">​</a></h3>
+<p>指出项目要达到的目标，如市场目标、技术目标等。</p>
+<p>进一步开发和维护知识图谱自动更新平台项目的功能。</p>
+<blockquote>
+<p><strong>具体目标：</strong></p>
+</blockquote>
+<ol>
+<li>加强系统文献的共享性和用户隐私性</li>
+</ol>
+<ul>
+<li>
+<p>增加了公共文献库，用户在选择上传文献时可以选择上传到公共文献库，所有用户都可以查看和检索公共文献库中的文献并在问答环节中基于它们生成回答</p>
+</li>
+<li>
+<p>用户同样可以选择把文献上传到自己的私人库中</p>
+</li>
+</ul>
+<ol start="2">
+<li>增强系统的安全性和稳定性</li>
+</ol>
+<ul>
+<li>
+<p>增加了超级管理员，用于统一管理普通管理员的权限，消除了普通管理员身份无法被撤销的情况</p>
+</li>
+<li>
+<p>用户的权限统一由普通管理员授予</p>
+</li>
+<li>
+<p>对用户删除文献、修改问答对做了权限限制，保护系统文献库的安全和隐私</p>
+</li>
+<li>
+<p>超级管理员可以授予管理员管理公共文献库的权限，用户无权限管理公共文献库</p>
+</li>
+</ul>
+<ol start="3">
+<li>
+<p>增进系统问答结果的准确性</p>
+</li>
+<li>
+<p>优化界面以及增强用户的体验性</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>增添快捷方式，登录、注册、提问问题都可以由回车确认</p>
+</li>
+<li>
+<p>问答环节增加历史访问功能，提问过得问答对可以在历史记录中查询</p>
+</li>
+<li>
+<p>优化提示功能，用户上传文件、查询问答对成功与失败给与提示</p>
+</li>
+<li>
+<p>美化系统主页面和登录、注册页面</p>
+</li>
+</ul>
+<ol start="5">
+<li>改进日志记录功能</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="213-系统概述">2.1.3 系统概述<a href="#213-系统概述" class="hash-link" aria-label="2.1.3 系统概述的直接链接" title="2.1.3 系统概述的直接链接">​</a></h3>
+<p><strong>系统的总体工程流程如图 1 所示</strong></p>
+<p><img decoding="async" loading="lazy" alt="descript" src="/assets/images/image3-f4e48c3cc956186fdc55368c5532f580.png" width="865" height="329" class="img_ev3q"></p>
+<p><strong>图 1 总体工程流图</strong></p>
+<p><strong>然后概述系统将完成的主要功能。注意：要与 3.1 部分的功能描述一致</strong></p>
+<p>超级管理员和普通管理员有五大模块，如账号管理模块、文献库管理模块、问答对管理模块、知识图谱管理模块、权限管理模块，用户有四个模块，账号管理模块、文献库管理模块、问答对管理模块、知识图谱管理模块。用户可以通过注册获得一个账号，但是普通管理员是不能够注册的，只能由超级管理员授予管理员身份。用户可以且只可以注销自己的账号，普通管理员同用户一样；在超级管理员授权下，普通管理员可以注销用户的账号；超级管理员能够注销管理员账号。</p>
+<p>用户可以在登录系统时选择已有帐号登录或者注册新账号，登录后首先可以上传文献，系统将该文献保存到文献库。然后调用模型提取问答对并保存到问答对数据库，再针对问答对提取三元组同时保存到三元组文件中，以备调用。用户最初可以查看过程中保存的文献库与问答对数据库中的数据，但是三元组对任何用户都不可见。之后获取到的三元组文件被调用到知识图谱显示模块，将三元组分出点集和边集可视化显示，并为用户提供手动刷新、导出图谱的接口。其他的权限需管理员授权后才可以使用。最后登出，用户也可以注销自己的账号。</p>
+<p>管理员登陆后可以上传文献，操作与用户相同。但是普通管理员在被超级管理员赋予权限下享有对公共文献库和公共问答对数据库的增删查改  权限。知识图谱显示模块中，管理员和用户享有相同的功能。最后，管理员特有的功能模块——权限管理，在该模块中，管理员可以查看和修改用户的权限，使得用户可以享有修改或删除自己文献数据库某记录的权限。</p>
+<p>超级管理员在登录系统时，只能登录角色为超级管理员的账号，不能注册超级管理员账号。登陆后超级管理员可以上传文献，操作与普通管理员相同。享有对公共文献库和公共问答对修改和删除的特殊权限。知识图谱显示模块中，超级管理员和用户享有相同的功能。在超级管理员权限管理模块中，超级管理员可以查看和修改管理员权限，使管理员可以享有对公共文献库和公共问答对库的删除和修改权限。超级管理员也可以修改用户的身份，使普通用户转变成新的普通管理员。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="22-用户特点">2.2 用户特点<a href="#22-用户特点" class="hash-link" aria-label="2.2 用户特点的直接链接" title="2.2 用户特点的直接链接">​</a></h2>
+<p>列出本软件的最终用户的特点，充分说明操作人员、维护人员的教育水平和技术专长，以及本软件的预期使用频度。</p>
+<p>用户对像：科研工作者或是需要文献分析的学生，仅限于华中农业大学内部人员（要求能使用校园网）</p>
+<p>用户需求：需要高效、准确并且时刻更新的信息检索平台</p>
+<p>使用频度：预期操作人员会每天皆使用本系统</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="23-假定和约束">2.3 假定和约束<a href="#23-假定和约束" class="hash-link" aria-label="2.3 假定和约束的直接链接" title="2.3 假定和约束的直接链接">​</a></h2>
+<p>列出进行本软件开发工作的假定和约束，例如经费限制、开发期限、硬件限制等。即可行性分析，经济、技术可行性。</p>
+<ol>
+<li>经济可行性</li>
+</ol>
+<ul>
+<li>
+<p>预算限制：项目有一定的预算需求，需要调用学校服务器。</p>
+</li>
+<li>
+<p>成本控制：对系统开发、测试、部署和维护过程中产生的成本进行控制，所有的软件和部署平台都在成本控制内</p>
+</li>
+</ul>
+<ol start="2">
+<li>技术可行性</li>
+</ol>
+<ul>
+<li>
+<p>技术栈选择：选择合适的技术栈和工具，包括 python 编程语言、mysql 数据库、知识图谱库。</p>
+</li>
+<li>
+<p>技术团队能力：团队在所选择技术方面应有足够的经验和能力，以确保项目的顺利进行。</p>
+</li>
+<li>
+<p>兼容性：需要确保系统与现有系统的兼容性，特别是与现有的数据存储、知识图谱等的兼容。</p>
+</li>
+<li>
+<p>可扩展性：系统应具有良好的可扩展性，代码以模块化的方式编写，各司其职</p>
+</li>
+</ul>
+<h1>3 功能需求</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="31-功能划分">3.1 功能划分<a href="#31-功能划分" class="hash-link" aria-label="3.1 功能划分的直接链接" title="3.1 功能划分的直接链接">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="311-系统功能组成">3.1.1 系统功能组成<a href="#311-系统功能组成" class="hash-link" aria-label="3.1.1 系统功能组成的直接链接" title="3.1.1 系统功能组成的直接链接">​</a></h3>
+<p>可以用文字叙述系统由哪些功能组成，需附图说明，如果采用结构化分析方法，可以<strong>附上顶层和 0 层数据流图</strong>，并给予解释说明。如果采用面向对象分析方法，可以附上系统的<strong>总体用例图</strong>，并给予解释说明。对图进行解释，可以在文中使用“xx 系统由 xx 功能组成，如图 2 所示，。。。。”进行叙述。</p>
+<p><strong>文献管理系统：</strong></p>
+<ol>
+<li>
+<p>文献采集与导入：创建在线数据库，提供导入功能将文献信息整合到系统中。</p>
+</li>
+<li>
+<p>文献分类与组织：提供对  文献进行分类、标签化或者建立文件夹等组织方式，以便用户可以根据需求进行管理和查找。（个人文献库和公共文献库）</p>
+</li>
+<li>
+<p>文献检索：具备强大的检索功能，使用户能够快速准确地找到需要的文献，支持关键词搜索。</p>
+</li>
+<li>
+<p>文献查看：提供文献阅读功能，允许用户在系统内直接阅读文献。</p>
+</li>
+</ol>
+<p><strong>账号管理系统：</strong></p>
+<ol>
+<li>
+<p>用户注册、登录、退出与注销账号：允许用户进行注册账号，并提供登录功能，以便用户能够访问系统的各项功能。</p>
+</li>
+<li>
+<p>普通管理员登录、退出与注销账号。</p>
+</li>
+<li>
+<p>超级管理员登录与退出账号。</p>
+</li>
+</ol>
+<p><strong>权限管理系统：</strong></p>
+<ol>
+<li>
+<p>用户角色管理：超级管理员具有最高权限，可以创建、编辑和删除管理员账号，管理员具有管理普通用户的权限，普通用户则只能访问系统提供的基本功能。</p>
+</li>
+<li>
+<p>用户信息管理：超级管理员和管理员可以查看和编辑用户的基本信息，如用户名、密码、邮箱等，以及用户的权限设置。</p>
+</li>
+<li>
+<p>密码管理与安全性：提供密码管理功能，包括密码修改、找回密码等，保障用户账号的安全性。</p>
+</li>
+<li>
+<p>用户权限管理：超级管理员和管理员可以设置不同用户的权限，包括访问权限、操作权限等，以确保用户能够按照其角色的要求合理地使用系统。</p>
+</li>
+<li>
+<p>账号注销与冻结：超级管理员和管理员可以对用户账号进行注销或冻结操作，以应对违规行为或其他特殊情况。</p>
+</li>
+</ol>
+<p><strong>问答管理系统：</strong></p>
+<ol>
+<li>
+<p>问题提交与管理：允许用户提交问题，并提供管理界面用于管理问题，包括发布、编辑、删除等操作。</p>
+</li>
+<li>
+<p>问题搜索与检索：提供强大的搜索功能，允许用户通  过关键词、标签等方式快速定位到相关的问题。</p>
+</li>
+<li>
+<p>答案生成与展示：根据用户提出的问题，系统能够自动或者手动生成相应的答案，并将答案展示给用户。</p>
+</li>
+<li>
+<p>知识库管理： 管理系统中的知识库，包括添加、删除、编辑知识库内容等功能。</p>
+</li>
+<li>
+<p>修改问答对的日志记录</p>
+</li>
+</ol>
+<p><strong>知识图谱管理系统</strong></p>
+<ol>
+<li>
+<p>查询知识图谱：该功能允许用户通过输入关键词或提出问题来查询知识图谱中的相关信息。系统将根据用户的查询意图，从知识图谱中智能地检索相关节点和关联信息，并将结果以易于理解和浏览的方式呈现给用户，帮助他们快速获取所需知识。</p>
+</li>
+<li>
+<p>手动更新知识图谱：该功能允许管理员或授权用户手动触发知识图谱的更新过程。用户可以选择指定更新的范围或特定的数据源，系统将根据用户的选择进行相应的更新操作。这样可以确保知识图谱中的信息始终保持最新和准确。</p>
+</li>
+<li>
+<p>保存知识图谱为图片：该功能允许用户将当前查看的知识图谱保存为图片格式。用户可以随时通过该功能将知识图谱快速保存下来，方便后续的分享、打印或进一步分析使用。保存的图片将保留图谱的完整结构和节点信息。</p>
+</li>
+<li>
+<p>查看图谱生成日志：该功能允许用户查看知识图谱生成过程的详细日志记录。系统将记录每次图谱更新的操作步骤、时间和相关信息，用户可以通过查看日志了解图谱生成的历史记录，包括成功生成的图谱数量、失败的原因等，以便及时调整和改进系统的运行。</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="descript" src="/assets/images/image4-69dbab2b60c7cb0a59a4ade5ee171e4b.png" width="866" height="1360" class="img_ev3q"></p>
+<p>图 2 超级管理员总体用例图</p>
+<p><img decoding="async" loading="lazy" alt="descript" src="/assets/images/image5-007e6319020c8080f203907a68895f1a.png" width="866" height="1194" class="img_ev3q"></p>
+<p>图 3 普通管理员用例图</p>
+<p><img decoding="async" loading="lazy" alt="descript" src="/assets/images/image6-bd7cd4b88593f438bbf11b599994ab64.png" width="866" height="1298" class="img_ev3q"></p>
+<p>图 4 用户用例图</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="312-功能编号和优先级">3.1.2 功能编号和优先级<a href="#312-功能编号和优先级" class="hash-link" aria-label="3.1.2 功能编号和优先级的直接链接" title="3.1.2 功能编号和优先级的直接链接">​</a></h3>
+<p>表格形式给出，可参见教材实例的表格。<strong>注意这里的每个功能需要与 3.1.1 的总体图中的功能名称保持一致。</strong></p>
+<table><thead><tr><th>编号</th><th>名称</th><th>优先级</th><th>描述</th></tr></thead><tbody><tr><td>1.1</td><td>文献采集与导入</td><td>重要</td><td>创建在线数据库**，**提供导入功能将文献信息整合到系统中</td></tr><tr><td>1.2</td><td>文献分类与组织</td><td>重要</td><td>提供对文献进行分类、标签化或者建立文件夹等组织方式，以便用户可以根据需求进行管理和查找。（个人文献库和公共文献库）</td></tr><tr><td>1.3</td><td>文献检索</td><td>非常重要</td><td>具备强大的检索功能，使用户能够快速准确地找到需要的文献，支持关键词搜索。</td></tr><tr><td>1.4</td><td>文献查看</td><td>重要</td><td>提供文献阅读功能，允许用户在系统内直接阅读文献。</td></tr><tr><td>2.1</td><td>用户注册登录退出注销账号</td><td>非常重要</td><td>用户注册、登录、退出与注销账号：允许用户进行注册账号，并提供登录功能，以便用户能够访问系统的各项功能。</td></tr><tr><td>2.2</td><td>普通管理员登录退出注销账号</td><td>非常重要</td><td>普通管理员登录、退出与注销账号 。</td></tr><tr><td>2.3</td><td>超级管理员登陆与退出账号</td><td>非常重要</td><td>超级管理员登录与退出账号。</td></tr><tr><td>3.1</td><td>用户角色管理</td><td>一般</td><td>超级管理员具有最高权限，可以创建、编辑和删除管理员账号，管理员具有管理普通用户的权限，普通用户则只能访问系统提供的基本功能。</td></tr><tr><td>3.2</td><td>用户信息管理</td><td>一般</td><td>超级管理员和管理员可以查看和编辑用户的基本信息，如用户名、密码、邮箱等，以及用户的权限设置。</td></tr><tr><td>3.3</td><td>密码管理与安全性</td><td>重要</td><td>提供密码管理功能，包括密码修改、找回密码等，保障用户账号的安全性。</td></tr><tr><td>3.4</td><td>用户权限管理</td><td>一般</td><td>超级管理员和管理员可以设置不同用户的权限，包括访问权限、操作权限等，以确保用户能够按照其角色的要求合理地使用系统。</td></tr><tr><td>3.5</td><td>账号注销与冻结</td><td>一般</td><td>超级管理员和管理员可以对用户账号进行注销或冻结操作，以应对违规行为或其他特殊情况。</td></tr><tr><td>4.1</td><td>问题提交与管理</td><td>重要</td><td>允许用户提交问题，并提供管理界面用于管理问题，包括发布、编辑、删除等操作。</td></tr><tr><td>4.2</td><td>问题搜索与检索</td><td>重要</td><td>提供强大的搜索功能，允许用户通过关键词、标签等方式快速定位到相关的问题。</td></tr><tr><td>4.3</td><td>答案生成与展示</td><td>重要</td><td>根据用户提出的问题，系统能够自动或者手动生成相应的答案，并将答案展示给用户。</td></tr><tr><td>4.4</td><td>知识库管理</td><td>重要</td><td>管理系统中的知识库，包括添加、删除、编辑知识库内容等功能。</td></tr><tr><td>4.5</td><td>修改问答对的日志记录</td><td>一般</td><td>修改问答对的日志  记录</td></tr><tr><td>5.1</td><td>查询知识图谱</td><td>重要</td><td>该功能允许用户通过输入关键词或提出问题来查询知识图谱中的相关信息。系统将根据用户的查询意图，从知识图谱中智能地检索相关节点和关联信息，并将结果以易于理解和浏览的方式呈现给用户，帮助他们快速获取所需知识。</td></tr><tr><td>5.2</td><td>手动更新知识图谱</td><td>一般</td><td>该功能允许管理员或授权用户手动触发知识图谱的更新过程。用户可以选择指定更新的范围或特定的数据源，系统将根据用户的选择进行相应的更新操作。这样可以确保知识图谱中的信息始终保持最新和准确。</td></tr><tr><td>5.3</td><td>保存知识图谱为图片</td><td>一般</td><td>该功能允许用户将当前查看的知识图谱保存为图片格式。用户可以随时通过该功能将知识图谱快速保存下来，方便后续的分享、打印或进一步分析使用。保存的图片将保留图谱的完整结构和节点信息。</td></tr><tr><td>5.4</td><td>查看知识图谱生成日志</td><td>一般</td><td>该功能允许用户查看知识图谱生成过程的详细日志记录。系统将记录每次图谱更新的操作步骤、时间和相关信息，用户可以通过查看日志了解图谱生成的历史记录，包括成功生成的图谱数量、失败的原因等，以便及时调整和改进系统的运行。</td></tr></tbody></table>
+<p><strong>表 1 功能编号与优先级表</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="32-功能描述">3.2 功能描述<a href="#32-功能描述" class="hash-link" aria-label="3.2 功能描述的直接链接" title="3.2 功能描述的直接链接">​</a></h2>
+<p>依次对 3.1.1 的各个子功能详细描述。每个子功能分小节描述。</p>
+<p><strong>每个子功能需要描述以下内容：首先用文字叙述该功能的定义（即该功能做什么），其次采取结构化分析方法或面向对象分析方法进行功能建模。</strong></p>
+<p><strong>（1）xx 功能</strong></p>
+<p><strong>对该功能的文字描述</strong></p>
+<p><strong>采取结构化分析方法或面向对象分析方法进行功能建模的各种图例以及文字说明。</strong></p>
+<p><strong>（2）xx 功能</strong></p>
+<p><strong>…….</strong></p>
+<p><strong>具体的建模方法：</strong></p>
+<p><strong>结构化方法</strong>：构建数据流图，需要逐级细化功能，构建子图。叶子加工（不能再分解的功能）采用 IPO（输入-处理-输出）方式给出具体的描述（数据字典中不再描述）；</p>
+<p><strong>面向对象方法</strong>：</p>
+<ol>
+<li>对功能建模：构建用例图，需要给出主要用例场景描述（正常、异常、替代分支），并辅以 UML 动态图（如活动图）给予补充说明。2. 对领域业务建模：从用例描述中应用名词抽取、CRC 卡片等方法建模实体类，建立业务类图模型（包括实体类、边界类、控制类等分析类，类的属性与操作，类与类之间的关系。注意：类的具体操作细节可以到设计阶段进行精化）。3. 系统动态行为建模：使用 UML 动态图（如顺序图、通信图等）对对象间交互行为进行动态建模，进一步精化用例实现。</li>
+</ol>
+<h3>场景描述——文献采集与导入</h3>
+<table><thead><tr><th>用例名称</th><th>文献采集与导入</th></tr></thead><tbody><tr><td>范围</td><td>文献管理系统子模块</td></tr><tr><td>级别</td><td>重要</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>将用户上传的文献导入到数据库中进行管理</td></tr><tr><td>前置条件</td><td>用户导入若干文献</td></tr><tr><td>主成功场景</td><td>用户上传文献成功，并同步到文献数据库</td></tr><tr><td>拓展</td><td>文献上传失败，不支持的格式</td></tr><tr><td>技术和数据变元素</td><td>文献数据库</td></tr><tr><td>发生频率</td><td>经常</td></tr></tbody></table>
+<h3>场景描述——文献分类与组织</h3>
+<table><thead><tr><th>用例名称</th><th>文献分类与组织</th></tr></thead><tbody><tr><td>范围</td><td>文献管理系统子模块</td></tr><tr><td>级别</td><td>重要</td></tr><tr><td>主要参与者</td><td>管理员</td></tr><tr><td>涉众及其关注点</td><td>管理员将用户上传的文献在文献数据库中进行分类管理</td></tr><tr><td>前置条件</td><td>用户导入若干文献</td></tr><tr><td>主成功场景</td><td>用户上传文献成功，并同步到文献数据库，管理员根据文献数据库中文献，进行重新分类与组织</td></tr><tr><td>拓展</td><td>1.将文献归到用户个人文献库</td></tr><tr><td></td><td>2.将文献归到系统公共文献库</td></tr><tr><td>技术和数据变元素</td><td>文献数据库</td></tr><tr><td>发生频率</td><td>偶尔</td></tr></tbody></table>
+<h3>场景描述——文献检索</h3>
+<table><thead><tr><th>用例名称</th><th>文献检索</th></tr></thead><tbody><tr><td>范围</td><td>文献管理系统子模块</td></tr><tr><td>级别</td><td>非常重要</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>用户检索系统中的文献</td></tr><tr><td>前置条件</td><td>用户输入文献关键词进行检索</td></tr><tr><td>主成功场景</td><td>用户在交互界面搜索框数据若干关键词，检索文献数据库信息，返回检索信息</td></tr><tr><td>拓展</td><td>若文献库中无相关文献，则返回“NULL”</td></tr><tr><td>技术和数据变元素</td><td>文献数据库</td></tr><tr><td>发生频率</td><td>经常</td></tr></tbody></table>
+<h3>场景描述——文献查看</h3>
+<table><thead><tr><th>用例名称</th><th>文献查看</th></tr></thead><tbody><tr><td>范围</td><td>文献管理系统子模块</td></tr><tr><td>级别</td><td>重要</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>允许用户直接在系统中查看文献</td></tr><tr><td>前置条件</td><td>文献数据中存在用户拟查看的文献</td></tr><tr><td>主成功场景</td><td>用户成功在系统中在线查看文献</td></tr><tr><td>拓展</td><td>无</td></tr><tr><td>技术和数据变元素</td><td>文献数据库</td></tr><tr><td>发生频率</td><td>经常</td></tr></tbody></table>
+<h3>场景描述——用户注册，登录，退出，注销账号</h3>
+<table><thead><tr><th>用例名称</th><th>用户注册</th></tr></thead><tbody><tr><td>范围</td><td>账号管理系统子模块</td></tr><tr><td>级别</td><td>非常重要</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>用户</td></tr><tr><td>前置条件</td><td>用户尚未注册账号</td></tr><tr><td>主成功场景</td><td>用户输入注册账号信息（账号，密码，验证码），提示注册成功信息。</td></tr><tr><td>拓展</td><td>1.账号已存在，重新设定账号</td></tr><tr><td></td><td>2.验证码错误，重新收取验证码</td></tr><tr><td>技术和数据变元素</td><td>用户数据库</td></tr><tr><td>发生频率</td><td>偶尔</td></tr></tbody></table>
+<table><thead><tr><th>用例名称</th><th>用户登录</th></tr></thead><tbody><tr><td>范围</td><td>账号管理系统子模块</td></tr><tr><td>级别</td><td>非常重要</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>用户</td></tr><tr><td>前置条件</td><td>用户已经注册账号</td></tr><tr><td>主成功场景</td><td>用户输入登录账号信息（账号，密码），登录成功。</td></tr><tr><td>拓展</td><td>1.账号错误，检查账号拼写错误</td></tr><tr><td></td><td>2.密码错误，检查密码</td></tr><tr><td>技术和数据变元素</td><td>用户数据库</td></tr><tr><td>发生频率</td><td>经常</td></tr></tbody></table>
+<table><thead><tr><th>用例名称</th><th>用户退出</th></tr></thead><tbody><tr><td>范围</td><td>账号管理系  统子模块</td></tr><tr><td>级别</td><td>一般</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>用户</td></tr><tr><td>前置条件</td><td>用户已经登录账号</td></tr><tr><td>主成功场景</td><td>用户在交互界面点击退出按钮</td></tr><tr><td>拓展</td><td>退出失败，该用户已退出</td></tr><tr><td>技术和数据变元素</td><td>用户数据库</td></tr><tr><td>发生频率</td><td>较少</td></tr></tbody></table>
+<table><thead><tr><th>用例名称</th><th>用户注销</th></tr></thead><tbody><tr><td>范围</td><td>账号管理系统子模块</td></tr><tr><td>级别</td><td>一般</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>用户</td></tr><tr><td>前置条件</td><td>用户已经创建并登录账号</td></tr><tr><td>主成功场景</td><td>用户在交互界面点击注销账号，点击确认，注销用户账号成功</td></tr><tr><td>拓展</td><td>1.超级管理员账号不允许注销</td></tr><tr><td>技术和数据变元素</td><td>用户数据库</td></tr><tr><td>发生频率</td><td>极少</td></tr></tbody></table>
+<h3>场景描述-用户角色管理</h3>
+<table><thead><tr><th>用例名称</th><th>用户角色管理</th></tr></thead><tbody><tr><td>范围</td><td>权限管理系统子模块</td></tr><tr><td>级别</td><td>一般</td></tr><tr><td>主要参与者</td><td>超级管理员，管理员</td></tr><tr><td>涉众及其关注点</td><td>用户，管理员，超级管理员</td></tr><tr><td>前置条件</td><td>登录超级管理员/管理员账号</td></tr><tr><td>主成功场景</td><td>1.超级管理员可以创建，编辑和删除管理员账号</td></tr><tr><td>2.管理员可以管理普通用户账号</td><td></td></tr><tr><td>拓展</td><td>无法创建超级管理员和管理员账号</td></tr><tr><td>技术和数据变元素</td><td>角色数据库</td></tr><tr><td>发生频率</td><td>较少</td></tr></tbody></table>
+<h3>场景描述-用户信息管理</h3>
+<table><thead><tr><th>用例名称</th><th>用户信息管理</th></tr></thead><tbody><tr><td>范围</td><td>权限管理系统子模块</td></tr><tr><td>级别</td><td>一般</td></tr><tr><td>主要参与者</td><td>超级管理员，管理员</td></tr><tr><td>涉众及其关注点</td><td>用户，管理员，超级管理员</td></tr><tr><td>前置条件</td><td>登录超级管理员/管理员账号</td></tr><tr><td>主成功场景</td><td>超级管理员和管理员可以查看和编辑用户的基本信息，如用户名，密码，邮箱等，以及用户的权限设置</td></tr><tr><td>拓展</td><td>无法修改用户密码信息</td></tr><tr><td>技术和数据变元素</td><td>角色数据库</td></tr><tr><td>发生频率</td><td>较少</td></tr></tbody></table>
+<h3>场景描述-密码管理</h3>
+<table><thead><tr><th>用例名称</th><th>密码管理</th></tr></thead><tbody><tr><td>范围</td><td>权限管理系统子模块</td></tr><tr><td>级别</td><td>比较重要</td></tr><tr><td>主要参与者</td><td>所有用户</td></tr><tr><td>涉众及其关注点</td><td>无</td></tr><tr><td>前置条件</td><td>用户登录账号</td></tr><tr><td>主成功场景</td><td>在交互界面进行密码操作，包括密码修改，找回密码。</td></tr><tr><td>拓展</td><td>无</td></tr><tr><td>技术和数据变元素</td><td>角色数据库</td></tr><tr><td>发生频率</td><td>较少</td></tr></tbody></table>
+<h3>场景描述-用户权限管理</h3>
+<table><thead><tr><th>用例名称</th><th>用户权限管理</th></tr></thead><tbody><tr><td>范围</td><td>权限管理系统子模块</td></tr><tr><td>级别</td><td>比较重要</td></tr><tr><td>主要参与者</td><td>超级管理员，管理员</td></tr><tr><td>涉众及其关注点</td><td>用户，管理员，超级管理员</td></tr><tr><td>前置条件</td><td>登录超级管理员/管理员账号</td></tr><tr><td>主成功场景</td><td>超级管理员和管理员可以设置用户的不同权限，包括访问权限，操作权限等。</td></tr><tr><td>拓展</td><td>无</td></tr><tr><td>技术和数据变元素</td><td>角色数据库</td></tr></tbody></table>
+<h3>场景描述-账号注销与冻结</h3>
+<table><thead><tr><th>用例名称</th><th>账号注销与冻结</th></tr></thead><tbody><tr><td>范围</td><td>权限管理系统子模块</td></tr><tr><td>级别</td><td>比较重要</td></tr><tr><td>主要参与者</td><td>超级管理员，管理员</td></tr><tr><td>涉众及其关注点</td><td>用户，管理员，超级管理员</td></tr><tr><td>前置条件</td><td>登录超级管理员/管理员账号</td></tr><tr><td>主成功场景</td><td>超级管理员和管理员可以对普通用户账号进行注销或冻结操作</td></tr><tr><td>拓展</td><td>无法注销和冻结超级管理员账号</td></tr><tr><td>技术和数据变元素</td><td>角色数据库</td></tr><tr><td>发生频率</td><td>极少</td></tr></tbody></table>
+<h3>场景描述-问答管理</h3>
+<table><thead><tr><th>用例名称</th><th>问题提交与管理</th></tr></thead><tbody><tr><td>范围</td><td>问答管理系统子模块</td></tr><tr><td>级别</td><td>重要</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>全体用户</td></tr><tr><td>前置条件</td><td>用户有提交问题权限</td></tr><tr><td>主成功场景</td><td>用户提交问题，并提供管理界面用于管理问题，包括发布，编辑，删除等操作</td></tr><tr><td>拓展</td><td>无</td></tr><tr><td>技术和数据变元素</td><td>问答数据库</td></tr><tr><td>发生频率</td><td>经常</td></tr></tbody></table>
+<h3>场景描述-问题检索与搜索</h3>
+<table><thead><tr><th>用例名称</th><th>问题检索与搜索</th></tr></thead><tbody><tr><td>范围</td><td>问答管理系统子模块</td></tr><tr><td>级别</td><td>重要</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>全体用户</td></tr><tr><td>前置条件</td><td>用户有检索问题权限</td></tr><tr><td>主成功场景</td><td>用户通过关键词，标签等方式快速定位到相关的问题</td></tr><tr><td>拓展</td><td>无</td></tr><tr><td>技术和数据变元素</td><td>问答数据库</td></tr><tr><td>发生频率</td><td>经常</td></tr></tbody></table>
+<h3>场景描述-答案生成与展示</h3>
+<table><thead><tr><th>用例名称</th><th>答案生成与展示</th></tr></thead><tbody><tr><td>范围</td><td>问答管理系统子模块</td></tr><tr><td>级别</td><td>比较重要</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>系统</td></tr><tr><td>前置条件</td><td>用户提交问题</td></tr><tr><td>主成功场景</td><td>根据用户提交的问题，系统能够自动或者手动生成相应的答案，并将答案展示给用户</td></tr><tr><td>拓展</td><td>查询不到相关问题，则返回“无”</td></tr><tr><td>技术和数据变元素</td><td>问答数据库</td></tr><tr><td>发生频率</td><td>经常</td></tr></tbody></table>
+<h3>场景描述-知识库管理</h3>
+<table><thead><tr><th>用例名称</th><th>知识库管理</th></tr></thead><tbody><tr><td>范围</td><td>问答管理系统子模块</td></tr><tr><td>级别</td><td>一般</td></tr><tr><td>主要参与者</td><td>管理员</td></tr><tr><td>涉众及其关注点</td><td>管理员管理知识库</td></tr><tr><td>前置条件</td><td>登录有相关权限账号</td></tr><tr><td>主成功场景</td><td>管理系统中的知识库，包括添加，删除，编辑知识库内容等功能</td></tr><tr><td>拓展</td><td>无法删除特定内容</td></tr><tr><td>技术和数据变元素</td><td>问答数据库</td></tr><tr><td>发生频率</td><td>偶尔</td></tr></tbody></table>
+<h3>场景描述-修改问答对的日志记录</h3>
+<table><thead><tr><th>用例名称</th><th>修改问答对的日志记录</th></tr></thead><tbody><tr><td>范围</td><td>问答管理系统子模块</td></tr><tr><td>级别</td><td>一般</td></tr><tr><td>主要参与者</td><td>管理员</td></tr><tr><td>涉众及其关注点</td><td>日志记录</td></tr><tr><td>前置条件</td><td>登录有相关权限账号</td></tr><tr><td>主成功场景</td><td>修改问答对的日志记录</td></tr><tr><td>拓展</td><td>修改失败，日期格式错误</td></tr><tr><td>技术和数据变元素</td><td>问答数据库</td></tr><tr><td>发生频率</td><td>极少</td></tr></tbody></table>
+<h3>场景描述-查询知识图谱</h3>
+<table><thead><tr><th>用例名称</th><th>查询知识图谱</th></tr></thead><tbody><tr><td>范围</td><td>知识图谱系统子模块</td></tr><tr><td>级别</td><td>重要</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>全体用户</td></tr><tr><td>前置条件</td><td>用户有查询知识图谱权限</td></tr><tr><td>主成功场景</td><td>用户通过输入关键词或提出问题来查询知识图谱中的相关信息。系统将根据用户的查询意图，从知识图谱中智能地检索相关节点和关联信息，并将结果以易于理解和浏览的方式呈现给用户</td></tr><tr><td>拓展</td><td>无</td></tr><tr><td>技术和数据变元素</td><td>知识图谱数据库</td></tr><tr><td>发生频率</td><td>经常</td></tr></tbody></table>
+<h3>场景描述-手动更新知识图谱</h3>
+<table><thead><tr><th>用例名称</th><th>手动更新知识图谱</th></tr></thead><tbody><tr><td>范围</td><td>知识图谱系统子模块</td></tr><tr><td>级别</td><td>一般</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>有权限用户</td></tr><tr><td>前置条件</td><td>用户有相应的权限</td></tr><tr><td>主成功场景</td><td>管理员或授权用户手动触发知识图谱的更新过程。用户可以选择指定更新的范围或特定的数据源，系统将根据用户的选择进行相应的更新操作。这样可以确保知识图谱中的信息始终保持最新和准确。</td></tr><tr><td>拓展</td><td>无</td></tr><tr><td>技术和数据变元素</td><td>知识图谱数据  库</td></tr><tr><td>发生频率</td><td>经常</td></tr></tbody></table>
+<h3>场景描述-保存知识图谱为图片</h3>
+<table><thead><tr><th>用例名称</th><th>保存知识图谱为图片</th></tr></thead><tbody><tr><td>范围</td><td>知识图谱系统子模块</td></tr><tr><td>级别</td><td>一般</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>所有用户</td></tr><tr><td>前置条件</td><td>有相应的知识图谱</td></tr><tr><td>主成功场景</td><td>用户将当前查看的知识图谱保存为图片格式。用户可以随时通过该功能将知识图谱快速保存下来，方便后续的分享、打印或进一步分析使用。保存的图片将保留图谱的完整结构和节点信息。</td></tr><tr><td>拓展</td><td>无</td></tr><tr><td>技术和数据变元素</td><td>知识图谱数据库</td></tr><tr><td>发生频率</td><td>偶尔</td></tr></tbody></table>
+<h3>场景描述-查看知识图谱生成日志</h3>
+<table><thead><tr><th>用例名称</th><th>查看知识图谱生成日志</th></tr></thead><tbody><tr><td>范围</td><td>知识图谱系统子模块</td></tr><tr><td>级别</td><td>一般</td></tr><tr><td>主要参与者</td><td>用户</td></tr><tr><td>涉众及其关注点</td><td>全体用户</td></tr><tr><td>前置条件</td><td>无</td></tr><tr><td>主成功场景</td><td>用户查看知识图谱生成过程的详细日志记录。系统将记录每次图谱更新的操作步骤、时间和相关信息，用户可以通过查看日志了解图谱生成的历史记录，包括成功生成的图谱数量、失败的原因等，以便及时调整和改进系统的运行。</td></tr><tr><td>拓展</td><td>无</td></tr><tr><td>技术和数据变元素</td><td>知识图谱数据库</td></tr><tr><td>发生频率</td><td>较少</td></tr></tbody></table>
+<p>业务类图：</p>
+<p><img decoding="async" loading="lazy" alt="descript" src="/assets/images/image7-6e4734ed84a2677d5a44853b4b9505a2.png" width="865" height="502" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="321-用户管理">3.2.1 用户管理<a href="#321-用户管理" class="hash-link" aria-label="3.2.1 用户管理的直接链接" title="3.2.1 用户管理的直接链接">​</a></h3>
+<p><strong>1.用户</strong></p>
+<p>（1）用户注册：用户注册：用户可以在系统中注册一个新的账号。注册过 程中，用户需要提供必要的个人信息，并选择一个唯一的用户名和密码。</p>
+<p>（2）用户登录：已注册的用户可以通过输入正确的用户名和密码进行登录。 登录功能通过核对用户提供的凭据来验证用户的身份。成功登录后，用 户将获得访问系统部分功能的权限。</p>
+<p>（3）用户注销：用户可以选择注销系统中的账号。注销账号将会使用户失 去对系统的访问权限，并删除与其账号相关的全部个人信息。</p>
+<p><strong>2.管理员</strong></p>
+<p>（1）管理员登录：系统允许管理员通过输入正确的账号和密码进行登录。 管理员登录功能通过核对管理员提供的凭据来验证其身份。成功登录后， 管理员将获得系统中较高的权限和访问权，可以进行一系列管理操作。</p>
+<p>（2）管理员注销：管理员具有注销用户账号的特殊权限。注销自己的账号 将会使管理员失去对系统的访问权限，并且相关的个人信息也会被删除， 该操作具有安全风险。当管理员发现某个用户账号存在违规行为、安全 风险或其他问题时，可以选择注销该用户的账号。注销账号的过程将会 使该用户失去对系统的访问权限，并删除与其账号相关的个人信息。</p>
+<p><strong>3.超级管理员</strong></p>
+<p>（1）超级管理员登录：系统允许超级管理员通过输入正确的账号和密码进 行登录。超级管理员登录功能通过核对超级管理员提供的凭据来验证其 身份。成功登录后，管理员将获得系统中最高的权限和访问权，可以进 行所有管理操作。</p>
+<p>（2）超级管理员注销：超级管理员具有注销用户和管理员账号的特殊权限。 当超级管理员发现某个用户或者管理员账号存在违规行为、安全风险或 其他问题时，可以选择注销该用户或管理员的账号。注销账号的过程将 会使该用户失去对系统的访问权限，并删除与其账号相关的个人信息。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="322-文献库管理">3.2.2 文献库管理<a href="#322-文献库管理" class="hash-link" aria-label="3.2.2 文献库管理的直接链接" title="3.2.2 文献库管理的直接链接">​</a></h3>
+<p><strong>1.用户</strong></p>
+<p>（1）上传文献：注册用户可以通过系统界面将自己的文献上传到系统中。 上传的文献会被系统保存到文献库，并在后台调用模型，自动提取出问 答对和三元组进行保存，将数据提供给图谱显示模块。</p>
+<p>（2）查询文献库：</p>
+<p>查询自己文献库：用户可以在系统中进行查询，以获取所有自己上传的 文献。用户可以点击特定的单个文献，以查看该文献的具体信息， 例如文献名、文献内容等</p>
+<p>查询所有文献库：用户可以在系统中进行查询，以获取所有已上传的文 献。由于文献数量可能很大，系统采用了分页显示的方式，每页显 示固定数量的文献结果，通过翻页查看更多文献。</p>
+<p>（3）删除文献（需被管理员赋予）</p>
+<p>用户仅有删除自己文献的权限，同时级联删除问答对数据库与三元组文 件。</p>
+<p>（4）修改文献（需被管理员赋予）</p>
+<p>用户仅有修改自己文献的权限，可对文献的信息和内容进行修改，以及 上传新的版本。</p>
+<p>（5）下载文献</p>
+<p>下载自己文献库文献：用户可以通过系统界面将自己文献库的文献 下载。</p>
+<p>下载公共文献库文献（需被管理员赋予）：用户可以通过系统界面将公 共文献库的文献下载。</p>
+<p><strong>2.管理员</strong></p>
+<p>（1）上传文献：同用户</p>
+<p>（2）查询文献：同用户</p>
+<p>（3）删除文献：</p>
+<p>删除自己文献：同用户</p>
+<p>删除公共文献库文献（需被超级管理员赋予权限）：超级管理员可 以赋予管理员删除公共文献库文献的权限。当超级管理员认为某 个管理员有权删除公共文献库文献时，可以为该管理员授权。授 权后，管理员将能够删除相应的文献，同时级联删除问答对数据 库与三元组文件。</p>
+<p>（4）修改文献：</p>
+<p>修改自己文献：同用户</p>
+<p>修改公共文献库文献（需被超级管理员赋予权限）：超级管理员具 备赋管理员修改公共文献库文献的权限。当管理员认为某个管理 员有权对公共库文献部分文献进行修改时，可以为该管理员授权。 授权后，管理员将获得相应的编辑权限，可以对文献的信息或内 容进行修改，以及上传新的版本。</p>
+<p>（5）下载文献：同用户</p>
+<p><strong>3.超级管理员</strong></p>
+<p>（1）上传文献：同用户</p>
+<p>（2）查询文献：同用户</p>
+<p>（3）删除文献：</p>
+<p>删除自己文献：同用户</p>
+<p>删除公共文献库文献：超级管理员有删除文献的权限。可以删除相 应的文献，使文献及其相关的问答对、三元组从系统中彻底移除。</p>
+<p>（4）修改文献：</p>
+<p>修改自己文献：同用户。</p>
+<p>修改公共文献库文献：超级管理员有相应的编辑权限，可以对文献 的信息或内容进行修改。</p>
+<p>（5）下载文献：同用户</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="323-问答对管理">3.2.3 问答对管理<a href="#323-问答对管理" class="hash-link" aria-label="3.2.3 问答对管理的直接链接" title="3.2.3 问答对管理的直接链接">​</a></h3>
+<p><strong>1.用户</strong></p>
+<p>（1）查询问答对：用户可 以通过系统界面查询并浏览自己问答对的信息。 系统将这些问答对以分页的形式展示，便于用户进行查看和筛选。 用户可以翻页浏览问答对，全面了解自己问答对内容。</p>
+<p>（2）检索问答对：</p>
+<p>检索自己问答对：用户可以在系统界面上输入问题，并进行查询操作。 系统将根据输入的问题，在自己问答对库中进行匹配，并返回与问 题相关的问答对列表。为了方便管理和浏览，系统将结果以分页的 形式展示，用户可以逐页查看相关的自己问答对。</p>
+<p>检索公共问答对：用户可以在系统界面上输入问题，并进行查询操作。 系统将根据输入的问题，在公共问答对库中进行匹配，并返回与问 题相关的问答对列表。为了方便管理和浏览，系统将结果以分页的 形式展示，用户可以逐页查看相关的公共问答对。</p>
+<p><strong>2.管理员</strong></p>
+<p>（1）查询问答对：同用户。</p>
+<p>（2）检索问答对：同用户。</p>
+<p>（3）删除问答对（需被超级管理员赋予权限）：超级管理员具备赋予管 理员删除问答对的权限。当超级管理员认为某个管理员有权删除 相关的问答对时，可以为该管理员授权。授权后，管理员将能够 删除问答对并级联修改相关的三元组。</p>
+<p>（4）修改问答对（需被超级管理员赋予权限）：超级管理员还可以赋予 管理员修改问答对的权限。当超级管理员认为某个管理员有权修 改问答对时，可以为该管理员授权。授权后，管理员将获得相应 的编辑权限，可以对问答对和相应的三元组的信息或内容进行修 改，以及上传新的版本。</p>
+<p><strong>3.超级管理员</strong></p>
+<p>（1）查询问答对：同用户。</p>
+<p>（2）检索问答对：同用户。</p>
+<p>（3）删除问答对：超级管理员有删除问答对的权限。删除相应的问答 对，使该问答对和从该问答对该问答对提取的三元组从数据库中移 除。</p>
+<p>（4）修改问答对：超级管理员有相应的编辑权限，可以对问答对的信 息或内容进行修改。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="324-知识图谱管理">3.2.4 知识图谱管理<a href="#324-知识图谱管理" class="hash-link" aria-label="3.2.4 知识图谱管理的直接链接" title="3.2.4 知识图谱管理的直接链接">​</a></h3>
+<p><strong>1.用户</strong></p>
+<p>（1）查看知识图谱：用户可以通过系统提供的知识图谱界面来浏览和查看 知识图谱。知识图谱以图形的形式展示，可以呈现知识之间的关联和连 接。用户可以使用界面上的操作按钮来进行放大、缩小、平移等操作， 以便更好地观察图谱中的内容。</p>
+<p>（2）更新知识图谱</p>
+<p>自动更新：系统内部会自动更新知识图谱，从相关数据源中拉取最新的 数据，并重新生成和显示知识图谱。</p>
+<p>手动更新：用户可以选择手动更新知识图谱，以便获取最新的知识信息。 在知识图谱界面上，用户可以点击更新按钮触发手动更新操作。系 统将根据用户的请求，从相关数据源中拉取最新的数据，并重新生 成和显示知识图谱。这样，用户可以确保自己获取的知识图谱是最 新的</p>
+<p>（3）导出知识图谱：用户可以选择将知识图谱导出为 PNG 或 JPG 格式的 图片文件，以便在其他应用或文档中使用。在知识图谱界面上，用户可 以点击导出按钮，并选择要导出的文件格式。系统将生成相应格式的图 片文件，使用户能够保存和使用知识图谱的静态快照。</p>
+<ol start="2">
+<li><strong>管理员</strong></li>
+</ol>
+<blockquote>
+<p>同用户。</p>
+</blockquote>
+<p><strong>3.超级管理员</strong></p>
+<blockquote>
+<p>同用户。</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="325-权限管理">3.2.5 权限管理<a href="#325-权  限管理" class="hash-link" aria-label="3.2.5 权限管理的直接链接" title="3.2.5 权限管理的直接链接">​</a></h3>
+<p><strong>1.管理员</strong></p>
+<p>（1）查看账号权限</p>
+<p>管理员具有查看自己以及所有用户账号所具有权限</p>
+<p>（2）修改用户权限（需被超级管理员赋予）</p>
+<p>用户修改自己文献的权限：管理员可以赋予用户修改自己文献的权 限</p>
+<p>用户删除自己文献的权限：管理员可以赋予用户删除自己文献的 权限</p>
+<p>用户下载公共文献库文献的权限：管理员可以赋予用户下载公共文 献库文献的权限</p>
+<p>（3）注销用户账户权限（需被超级管理员赋予）</p>
+<p>当管理员被超级管理员赋予注用户权限后，管理员具有注销用户账 号的特殊权限。</p>
+<p><strong>2.超级管理员</strong></p>
+<p>（1）查看管理员权限：超级管理员能够查看所有管理员账号所具有权限</p>
+<p>（2）修改管理员权限：超级管理员具有修改管理员权限的权限。当管理 员认为某个管理员的权限需要进行调整时，可以选择该管理员，并 在系统界面上进行修改，修改后的权限将立即生效，并影响管理员 在系统中的操作权限。</p>
+<p>（3）注销管理员账户：超级管理员具有注销管理员账号的特殊权限。</p>
+<p>（4）授予管理员身份：超级管理员可以将用户角色提升为管理员，赋予 其管理系统的权限。当管理员发现某个用户在系统中表现良好或需 要承担更多的管理责任时，可以给予其管理员权限。授予管理员权 限之后，该用户将能够执行更高级别的管理操作，如删改数据库、 修改用户权限等。</p>
+<p><img decoding="async" loading="lazy" alt="descript" src="/assets/images/image8-dacce2ed2ab32a0a510827dab28e5fe7.png" width="866" height="548" class="img_ev3q"></p>
+<p><strong>文献管理系统类-A</strong></p>
+<table><thead><tr><th><strong>Class</strong> ：文献采集与导入类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：创建在线数据库，提供导入功能将文献信息整合到系统中。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>创建在线数据库</td><td>文献分类与组织类</td></tr><tr><td>导入文献信息</td><td></td></tr></tbody></table>
+<p><strong>文献管理系统类-B</strong></p>
+<table><thead><tr><th><strong>Class</strong>：文献分类与组织类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：提供对文献进行分类、标签化或者建立文件夹等组织方式，以便用户可以根据需求进行管理和查找。（个人文献库和公共文献库）</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>文献分类，标签化</td><td>文献采集与导入类</td></tr><tr><td>组织管理文献存放</td><td></td></tr></tbody></table>
+<p><strong>文献管理系统类-C</strong></p>
+<table><thead><tr><th><strong>Class</strong>：文献检索类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：具备强大的检索功能，使用户能够快速准确地找到需要的文献，支持关键词搜索。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>提供文献检索功能</td><td>无</td></tr></tbody></table>
+<p><strong>文献管理系统类-D</strong></p>
+<table><thead><tr><th><strong>Class</strong>：文献查看类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：提供文献阅读功能，允许用户在系统内直接阅读文献。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>提供文献阅读功能</td><td>文献检索类</td></tr></tbody></table>
+<p><strong>用户管理系统类-A</strong></p>
+<table><thead><tr><th><strong>Class</strong>：用户注册与登录类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：允许用户进行注册账号，并提供登录功能，以便用户能够访问系统的各项功能。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>管理用户注册</td><td>用户角色管理类</td></tr><tr><td>管理用户登录</td><td></td></tr></tbody></table>
+<p>** **</p>
+<p><strong>用户管理系统类-B</strong></p>
+<table><thead><tr><th><strong>Class：用户信息管理类</strong></th><th></th></tr></thead><tbody><tr><td><strong>说明：超级管理员和管理员可以查看和编辑用户的基本信息，如用户名、密码、邮箱等，以及用户的权限设置。</strong></td><td></td></tr><tr><td><strong>职责：</strong></td><td><strong>协作类：</strong></td></tr><tr><td><strong>查看和编辑用户信息</strong></td><td><strong>密码管理类</strong></td></tr></tbody></table>
+<p>** **</p>
+<p><strong>用户管理系统类-C</strong></p>
+<table><thead><tr><th><strong>Class</strong>：密码管理类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：提供密码管理功能，包括密码修改、找回密码等，保障用户账号的安全性。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>找回密码</td><td><strong>无</strong></td></tr><tr><td>密码修改</td><td></td></tr></tbody></table>
+<p><strong>用户管理系统类-D</strong></p>
+<table><thead><tr><th><strong>Class</strong>：用户注册与注销类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：超级管理员和管理员可以对用户账号进行注销或冻结操作，以应对违规行为或其他特殊情况。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>注销和冻结操作</td><td>无</td></tr></tbody></table>
+<p><strong>权限管理系统类-A</strong></p>
+<table><thead><tr><th><strong>Class</strong>：用户角色管理类</th><th></th></tr></thead><tbody><tr><td>超级管理员具有最高权限，可以创建、编辑和删除管理员账号， 管理员具有管理普通用户的权限，普通用户则只能访问系统提供的基本功能。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>创建管理员账号</td><td>用户注册与登录类</td></tr><tr><td>编辑管理员账号</td><td></td></tr><tr><td>删除管理员账号</td><td></td></tr></tbody></table>
+<p><strong>权限管理系统类-B</strong></p>
+<table><thead><tr><th><strong>Class</strong>：用户权限管理类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：超级管理员和管理员可以设置不同用户的权限，包括访问权限、操作权限等，以确保用户能够按照其角色的要求合理地使用系统。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>设置不同用户权限</td><td>用户角色管理类</td></tr></tbody></table>
+<p><strong>问答管理系统类-A</strong></p>
+<table><thead><tr><th><strong>Class</strong>：问题提交与管理类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：允许用户提交问题，并提供管理界面用于管理问题，包括发布、编辑、删除等操作。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>管理用户问题提交</td><td>无</td></tr></tbody></table>
+<p><strong>问答管理系统类-B</strong></p>
+<table><thead><tr><th><strong>Class</strong>：问题搜索与检索类</th><th></th></tr></thead><tbody><tr><td>提供强大的搜索功能，允许用户通过关键词、标签等方式快速定位到相关的问题。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>问题检索</td><td>无</td></tr></tbody></table>
+<p><strong>问答管理系统类-C</strong></p>
+<table><thead><tr><th><strong>Class</strong>：答案  生成与展示类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：根据用户提出的问题，系统能够自动或者手动生成相应的答案，并将答案展示给用户。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>生成答案并展示</td><td>问题搜索与检索类</td></tr></tbody></table>
+<p><strong>问答管理系统类-D</strong></p>
+<table><thead><tr><th><strong>Class</strong>：知识库管理类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：管理系统中的知识库，包括添加、删除、编辑知识库内容等功能。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>管理知识库</td><td>问题提交与管理类</td></tr></tbody></table>
+<p><strong>知识图谱管理系统类-A</strong></p>
+<table><thead><tr><th><strong>Class</strong>：查询知识图谱类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：该功能允许用户通过输入关键词或提出问题来查询知识图谱中的相关信息。系统将根据用户的查询意图，从知识图谱中智能地检索相关节点和关联信息，并将结果以易于理解和浏览的方式呈现给用户，帮助他们快速获取所需知识。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>检索知识图谱</td><td>无</td></tr></tbody></table>
+<p><strong>知识图谱管理系统类-B</strong></p>
+<table><thead><tr><th><strong>Class</strong>：手动更新知识图谱类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：该功能允许管理员或授权用户手动触发知识图谱的更新过程。用户可以选择指定更新的范围或特定的数据源，系统将根据用户的选择进行相应的更新操作。这样可以确保知识图谱中的信息始终保持最新和准确。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协  作类</strong>：</td></tr><tr><td>更新知识图谱</td><td>查询知识图谱类</td></tr></tbody></table>
+<p><strong>知识图谱管理系统类-C</strong></p>
+<table><thead><tr><th><strong>Class</strong>：保存知识图谱为图片类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：该功能允许用户将当前查看的知识图谱保存为图片格式。用户可以随时通过该功能将知识图谱快速保存下来，方便后续的分享、打印或进一步分析使用。保存的图片将保留图谱的完整结构和节点信息。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>将知识图谱保存为图片形式</td><td>无</td></tr></tbody></table>
+<p><strong>知识图谱管理系统类-D</strong></p>
+<table><thead><tr><th><strong>Class</strong>：查看图谱生成日志类</th><th></th></tr></thead><tbody><tr><td><strong>说明</strong>：该功能允许用户查看知识图谱生成过程的详细日志记录。系统将记录每次图谱更新的操作步骤、时间和相关信息，用户可以通过查看日志了解图谱生成的历史记录，包括成功生成的图谱数量、失败的原因等，以便及时调整和改进系统的运行。</td><td></td></tr><tr><td><strong>职责</strong>：</td><td><strong>协作类</strong>：</td></tr><tr><td>查看日志文件</td><td>无</td></tr></tbody></table>
+<p>开发活动图：</p>
+<p><img decoding="async" loading="lazy" alt="descript" src="/assets/images/image9-c16a5e621057e2ff0bec6ed0e6413e09.png" width="865" height="536" class="img_ev3q"></p>
+<h1><img decoding="async" loading="lazy" alt="descript" src="/assets/images/image10-a901c812d85c7f6ed0cf3233d390f22a.png" width="865" height="601" class="img_ev3q"></h1>
+<p><img decoding="async" loading="lazy" alt="descript" src="/assets/images/image11-8456303bee5175d4098ffd0cf9b9d318.png" width="865" height="947" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="descript" src="/assets/images/image12-ade4578ce237f116e258a1cfdd1590a8.png" width="736" height="736" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="descript" src="/assets/images/image13-d5aeb8df2ee78058ac2052490f76ba22.png" width="865" height="536" class="img_ev3q"></p>
+<p>顺序图：（图显示有问题，后期转 word 就没事了）</p>
+<p><strong>注册</strong></p>
+<p>图图 8 注册顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了用户注册的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>用户为主动对象，其他对象为被动对象</p>
+<p>表表 6 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>注册</td><td>主动对象</td><td>用户</td><td>注册界面</td></tr><tr><td>显示注册界面</td><td>被动对象</td><td>注册界面</td><td>用户</td></tr><tr><td>输入注册信息</td><td>被动对象</td><td>用户</td><td>注册界面</td></tr><tr><td>申请注册</td><td>被动对象</td><td>注册界面</td><td>注册</td></tr><tr><td>核对用户名是否重复</td><td>被动对象</td><td>注册</td><td>用户信息</td></tr><tr><td>验证结果</td><td>被动对象</td><td>用户信息</td><td>注册</td></tr><tr><td>录入新用户信息</td><td>被动对象</td><td>注册</td><td>用户信息</td></tr><tr><td>返回结果</td><td>被动对象</td><td>用户信息</td><td>注册</td></tr><tr><td>返回结果</td><td>被动对象</td><td>注册</td><td>注册界面</td></tr><tr><td>返回结果</td><td>被动对象</td><td>注册界面</td><td>用户</td></tr></tbody></table>
+<p><strong>登录</strong></p>
+<p>图图 9 登录顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了用户登录的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>用户为主动对象，其他对象为被动对象</p>
+<p>表表 7 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>登录</td><td>主动对象</td><td>用户</td><td>登录界面</td></tr><tr><td>显示登录界面</td><td>被动对象</td><td>登录界面</td><td>用户</td></tr><tr><td>输入账号和密码</td><td>被动对象</td><td>用户</td><td>登录界面</td></tr><tr><td>申请登录</td><td>被动对象</td><td>登录界面</td><td>登录</td></tr><tr><td>验证账号</td><td>被动对象</td><td>登录</td><td>用户信息</td></tr><tr><td>验证结果</td><td>被动对象</td><td>用户信息</td><td>登录</td></tr><tr><td>返回结果</td><td>被动对象</td><td>登录</td><td>登录界面</td></tr><tr><td>返回结果</td><td>被动对象</td><td>登录界面</td><td>用户</td></tr></tbody></table>
+<p><strong>注销</strong></p>
+<p>图图 10 注销顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了用户注销自己账号的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>用户为主动对象，其他对象为被动对象</p>
+<p>表表 8 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>注销</td><td>主动对象</td><td>用户</td><td>注销界面</td></tr><tr><td>显示注销界面</td><td>被动对象</td><td>注销界面</td><td>用户</td></tr><tr><td>确认注销</td><td>被动对象</td><td>用户</td><td>注销界面</td></tr><tr><td>申请注销</td><td>被动对象</td><td>注销界面</td><td>注销</td></tr><tr><td>验证账号</td><td>被动对象</td><td>注销</td><td>用户信息</td></tr><tr><td>移除并更新账号信息</td><td>被动对象</td><td>用户信息</td><td>用户信息</td></tr><tr><td>返回注销信息</td><td>被动对象</td><td>用户信息</td><td>注销</td></tr><tr><td>返回注销信息</td><td>被动对象</td><td>注销</td><td>注销界面</td></tr><tr><td>返回结果</td><td>被动对象</td><td>注销界面</td><td>用户</td></tr></tbody></table>
+<p>对象接收/发送信息的描述表</p>
+<p><strong>文献库管理</strong></p>
+<p><strong>查询文献</strong></p>
+<p>图 图 11 查询文献顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了用户查询文献的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>用户为主动对象，其他对象为被动对象</p>
+<p>表表 9 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>查询</td><td>主动对象</td><td>用户</td><td>文献库管理界面</td></tr><tr><td>显示查询界面</td><td>被动对象</td><td>文献库管理界面</td><td>用户</td></tr><tr><td>输入查询信息</td><td>主动对象</td><td>用户</td><td>文献库管理界面</td></tr><tr><td>处理查询文献请求</td><td>被动对象</td><td>文献库管理界面</td><td>文献获取</td></tr><tr><td>查询文献数据</td><td>被动对象</td><td>文献获取</td><td>文献信息</td></tr><tr><td>返回查询结果</td><td>被动对象</td><td>文献信息</td><td>文献获取</td></tr><tr><td>返回查询结果</td><td>被动对象</td><td>文献获取</td><td>文献库管理界面</td></tr><tr><td>显示查询结果</td><td>被动对象</td><td>文献库管理界面</td><td>用户</td></tr></tbody></table>
+<p>对象接收/发送信息的描述表</p>
+<p><strong>上传文献</strong></p>
+<p>图图 12 上传文献顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了用户上传文献的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>用户为主动对象，其他对象为被动对象</p>
+<p>表表 10 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>上传</td><td>主动对象</td><td>用户</td><td>文献库管理界面</td></tr><tr><td>显示上传界面</td><td>被动对象</td><td>文献库管理界面</td><td>用户</td></tr><tr><td>确认上传的文件</td><td>被动对象</td><td>用户</td><td>文献库管理界面</td></tr><tr><td>处理上传文献请求</td><td>被动对象</td><td>文献库管理界面</td><td>上传业务逻辑</td></tr><tr><td>保存文献数据</td><td>被动对象</td><td>文献上传</td><td>文献信息</td></tr><tr><td>返回保存结果</td><td>被动对象</td><td>文献信息</td><td>文献上传</td></tr><tr><td>返回保存结果</td><td>被动对象</td><td>文献上传</td><td>文献库管理界面</td></tr><tr><td>显示保存结果</td><td>被动对象</td><td>文献库管理界面</td><td>用户</td></tr></tbody></table>
+<p>对象接收/发送信息的描述表</p>
+<p><strong>下载文献</strong></p>
+<p>图 图 13 下载文献顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了用户下载文献的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>用户为主动对象，其他对象为被动对象</p>
+<p>表表 11 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>下载</td><td>主动对象</td><td>用户</td><td>文献库管理界面</td></tr><tr><td>显示下载界面</td><td>被动对象</td><td>文献库管理界面</td><td>用户</td></tr><tr><td>确认下载的文件</td><td>被动对象</td><td>用户</td><td>文献库管理界面</td></tr><tr><td>处理下载文献请求</td><td>被动对象</td><td>文献库管理界面</td><td>文献下载</td></tr><tr><td>获取文献数据</td><td>被动对象</td><td>文献下载</td><td>文献信息</td></tr><tr><td>返回下载结果</td><td>被动对象</td><td>文献信息</td><td>文献下载</td></tr><tr><td>返回下载结果</td><td>被动对象</td><td>文献下载</td><td>文献  库管理界面</td></tr><tr><td>显示下载结果</td><td>被动对象</td><td>文献库管理界面</td><td>用户</td></tr></tbody></table>
+<p>对象接收/发送信息的描述</p>
+<p><strong>修改文献</strong></p>
+<p>图图 14 修改文献顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了用户修改文献的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>用户为主动对象，其他对象为被动对象</p>
+<p>表表 12 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>修改</td><td>主动对象</td><td>用户</td><td>文献库管理界面</td></tr><tr><td>处理修改文献请求</td><td>被动对象</td><td>文献库管理界面</td><td>文献获取</td></tr><tr><td>查询要修改的文献信息</td><td>被动对象</td><td>文献获取</td><td>文献信息</td></tr><tr><td>返回文献信息</td><td>被动对象</td><td>文献信息</td><td>文献获取</td></tr><tr><td>返回文献信息</td><td>被动对象</td><td>文献获取</td><td>文献库管理界面</td></tr><tr><td>显示文献信息供修改</td><td>被动对象</td><td>文献库管理界面</td><td>用户</td></tr><tr><td>提交修改后的文献信息</td><td>主动对象</td><td>用户</td><td>文献库管理界面</td></tr><tr><td>处理修改后的文献信息</td><td>被动对象</td><td>文献库管理界面</td><td>文献修改</td></tr><tr><td>修改文献</td><td>被动对象</td><td>文献修改</td><td>文献信息</td></tr><tr><td>更新文献信息</td><td>被动对象</td><td>文献信息</td><td>文献信息</td></tr><tr><td>返回修改结果</td><td>被动对象</td><td>文献信息</td><td>文献修改</td></tr><tr><td>返回修改结果</td><td>被动对象</td><td>文献修改</td><td>文献库管理界面</td></tr><tr><td>显示修改结果</td><td>被动对象</td><td>文献库管理界面</td><td>用户</td></tr></tbody></table>
+<p>对象接收/发送信息的描述表</p>
+<p><strong>删除文献</strong></p>
+<p>图图 15 删除文献顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了用户删除文献的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>用户为主动对象，其他对象为被动对象</p>
+<p>表表 13 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>删除</td><td>主动对象</td><td>用户</td><td>文献库管理界面</td></tr><tr><td>处理删除文献请求</td><td>被动对象</td><td>文献库管理界面</td><td>文献获取</td></tr><tr><td>查询要删除的文献信息</td><td>被动对象</td><td>文献获取</td><td>文献信息</td></tr><tr><td>返回文献信息</td><td>被动对象</td><td>文献信息</td><td>文献获取</td></tr><tr><td>返回文献信息</td><td>被动对象</td><td>文献获取</td><td>文献库管理界面</td></tr><tr><td>显示文献信息供删除</td><td>被动对象</td><td>文献库管理界面</td><td>用户</td></tr><tr><td>确认删除文献</td><td>主动对象</td><td>用户</td><td>文献库管理界面</td></tr><tr><td>删除文献</td><td>被动对象</td><td>文献库管理界面</td><td>文献删除</td></tr><tr><td>移除文献记录</td><td>被动对象</td><td>文献删除</td><td>文献信息</td></tr><tr><td>更新文献信息</td><td>被动对象</td><td>文献信息</td><td>文献信息</td></tr><tr><td>返回删除结果</td><td>被动对象</td><td>文献信息</td><td>文献删除</td></tr><tr><td>返回删除结果</td><td>被动对象</td><td>文献删除</td><td>文献库管理界面</td></tr><tr><td>显示删除结果</td><td>被动对象</td><td>文献库管理界面</td><td>用户</td></tr></tbody></table>
+<p>对象接收/发送信息的描述表</p>
+<p><strong>问答对管理</strong></p>
+<p><strong>查询问答对</strong></p>
+<p>图 图 16 查询问答对顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了管理员查询问答对的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>管理员为主动对象，其他对象为被动对象</p>
+<p>表表 14 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>查询</td><td>主动对象</td><td>管理员</td><td>问答对管理界面</td></tr><tr><td>显示查询界面</td><td>被动对象</td><td>问答对管理界面</td><td>管理员</td></tr><tr><td>输入查询信息</td><td>主动对象</td><td>管理员</td><td>问答对管理界面</td></tr><tr><td>处理查询文献请求</td><td>被动对象</td><td>问答对管理界面</td><td>问答对获取</td></tr><tr><td>查询文献数据</td><td>被动对象</td><td>问答对获取</td><td>问答对信息</td></tr><tr><td>返回查询结果</td><td>被动对象</td><td>问答对信息</td><td>问答对获取</td></tr><tr><td>返回查询结果</td><td>被动对象</td><td>问答对获取</td><td>问答对管理界面</td></tr><tr><td>显示查询结果</td><td>被动对象</td><td>问答对管理界面</td><td>管理员</td></tr></tbody></table>
+<p>对象接收/发送信息的描述表</p>
+<p><strong>修改问答对</strong></p>
+<p>图 图 17 修改问答对顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了管理员修改问答对的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>管理员为主动对象，其他对象为被动对象</p>
+<p>表表 15 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>修改</td><td>主动对象</td><td>管理员</td><td>问答对管理界面</td></tr><tr><td>处理修改问答对请求</td><td>被动对象</td><td>问答对管理界面</td><td>问答对获取</td></tr><tr><td>查询要修改的问答对</td><td>被动对象</td><td>问答对获取</td><td>问答对信息</td></tr><tr><td>返回问答对数据</td><td>被动对象</td><td>问答对信息</td><td>问答对获取</td></tr><tr><td>返回问答对数据</td><td>被动对象</td><td>问答对获取</td><td>问答对管理界面</td></tr><tr><td>显示问答对供修改</td><td>被动对象</td><td>问答对管理界面</td><td>管理员</td></tr><tr><td>提交修改后的问答对</td><td>主动对象</td><td>管理员</td><td>问答对管理界面</td></tr><tr><td>处理修改后的问答对</td><td>被动对象</td><td>问答对管理界面</td><td>问答对修改</td></tr><tr><td>修改问答对</td><td>被动对象</td><td>问答对修改</td><td>问答对信息</td></tr><tr><td>执行更新操作</td><td>被动对象</td><td>问答对信息</td><td>问答对信息</td></tr><tr><td>返回修改结果</td><td>被动对象</td><td>问答对信息</td><td>问答对修改</td></tr><tr><td>返回修改结果</td><td>被动对象</td><td>问答对修改</td><td>问答对管理界面</td></tr><tr><td>显示修改结果</td><td>被动对象</td><td>问答对管理界面</td><td>管理员</td></tr></tbody></table>
+<p>对象接收/发送信息的描述表</p>
+<p><strong>删除问答对</strong></p>
+<p>图图 18 删除问答对顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了管理员删除问答对的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>管理员为主动对象，其他对象为被动对象</p>
+<p>表表 16 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>删除</td><td>主动对象</td><td>管理员</td><td>问答对管理界面</td></tr><tr><td>处理删除问答对请求</td><td>被动对象</td><td>问答对管理界面</td><td>问答对获取</td></tr><tr><td>查询要删除的问答对</td><td>被动对象</td><td>问答  对获取</td><td>问答对信息</td></tr><tr><td>返回问答对数据</td><td>被动对象</td><td>问答对信息</td><td>问答对获取</td></tr><tr><td>返回问答对数据</td><td>被动对象</td><td>问答对获取</td><td>问答对管理界面</td></tr><tr><td>显示问答对供删除</td><td>被动对象</td><td>问答对管理界面</td><td>管理员</td></tr><tr><td>确认删除问答对</td><td>主动对象</td><td>管理员</td><td>问答对管理界面</td></tr><tr><td>删除问答对</td><td>被动对象</td><td>问答对管理界面</td><td>问答对删除</td></tr><tr><td>移除问答对记录</td><td>被动对象</td><td>问答对删除</td><td>问答对信息</td></tr><tr><td>执行更新操作</td><td>被动对象</td><td>问答对信息</td><td>问答对信息</td></tr><tr><td>返回删除结果</td><td>被动对象</td><td>问答对信息</td><td>问答对删除</td></tr><tr><td>返回删除结果</td><td>被动对象</td><td>问答对删除</td><td>问答对管理界面</td></tr><tr><td>显示删除结果</td><td>被动对象</td><td>问答对管理界面</td><td>管理员</td></tr></tbody></table>
+<p>对象接收/发送信息的描述表</p>
+<p><strong>知识图谱</strong></p>
+<p><strong>显示知识图谱</strong></p>
+<p>图图 19 显示知识图谱顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了页面显示知识图谱的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>用户为主动对象，其他对象为被动对象</p>
+<p>表表 17 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>启动知识图谱显示页面</td><td>主动对象</td><td>用户</td><td>知识图谱界面</td></tr><tr><td>初始化知识图谱显示页面</td><td>被动对象</td><td>知识图谱界面</td><td>知识图谱获取</td></tr><tr><td>获取三元组数据</td><td>被动对象</td><td>知识图谱获取</td><td> 知识图谱信息</td></tr><tr><td>返回知识图谱数据</td><td>被动对象</td><td>知识图谱信息</td><td>知识图谱获取</td></tr><tr><td>返回知识图谱数据</td><td>被动对象</td><td>知识图谱获取</td><td>知识图谱界面</td></tr><tr><td>显示知识图谱</td><td>被动对象</td><td>知识图谱界面</td><td>用户</td></tr></tbody></table>
+<p>对象接收/发送信息的描述表</p>
+<p><strong>更新知识图谱</strong></p>
+<p>图图 20 更新知识图谱顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了用户手动更新知识图谱的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>用户为主动对象，其他对象为被动对象</p>
+<p>表表 18 对象接收/发送信息的描述</p>
+<p>[TABLE]</p>
+<p><strong>导出知识图谱</strong></p>
+<p>图图 21 导出知识图谱顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了用户导出特定格式的知识图谱的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>用户为主动对象，其他对象为被动对象 ③ 对象接收/发送信息的描述</p>
+<p>表表 19 对象接收/发送信息的描述</p>
+<p>[TABLE]</p>
+<p><strong>权限管理</strong></p>
+<p><strong>查询用户权限</strong></p>
+<p>图图 22 查询用户权限顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了管理员查询用户权限的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>管理员为主动对象，其他对象为被动对象</p>
+<p>表表 20 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>查询</td><td>主动对象</td><td>管理员</td><td>权限管理界面</td></tr><tr><td>显示查询界面</td><td>被动对象</td><td>权限管理界面</td><td>管理员</td></tr><tr><td>确认查询的用户</td><td>主动对象</td><td>管理员</td><td>权限管理界面</td></tr><tr><td>处理查询权限请求</td><td>被动对象</td><td>权限管理界面</td><td>权限获取</td></tr><tr><td>获取权限数据</td><td>被动对象</td><td>权限获取</td><td>用户权限信息</td></tr><tr><td>返回权限数据</td><td>被动对象</td><td>用户权限信息</td><td>权限获取</td></tr><tr><td>返回权限数据</td><td>被动对象</td><td>权限获取</td><td>权限管理界面</td></tr><tr><td>显示用户权限</td><td>被动对象</td><td>权限管理界面</td><td>管理员</td></tr></tbody></table>
+<p><strong>修改用户权限</strong></p>
+<p>图图 23 修改用户权限顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了管理员修改某项用户权限的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>管理员为主动对象，其他对象为被动对象 ③ 对象接收/发送信息的描述</p>
+<p>表表 21 对象接收/发送信息的描述</p>
+<p>[TABLE]</p>
+<p><strong>注销用户账号</strong></p>
+<p>图图 24 注销用户账号顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了管理员注销用户账号的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>管理员为主动对象，其他对象为被动对象</p>
+<p>表表 22 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>注销用户账号</td><td>主动对象</td><td>管理员</td><td>权限管理界面</td></tr><tr><td>显示注销界面</td><td>被动对象</td><td>权限管理界面</td><td>管理员</td></tr><tr><td>确认注销某用户账号</td><td>主动对象</td><td>管理员</td><td>权限管理界面</td></tr><tr><td>处理注销账户请求</td><td>被动对象</td><td>权限管理界面</td><td>注销用户</td></tr><tr><td>删除用户数据</td><td>被动对象</td><td>注销用户</td><td>用户权限信息</td></tr><tr><td>执行删除操作</td><td>被动对象</td><td>用户权限信息</td><td>用户权限信息</td></tr><tr><td>返回注销结果</td><td>被动对象</td><td>用户权限信息</td><td>注销用户</td></tr><tr><td>返回注销结果</td><td>被动对象</td><td>注销用户</td><td>权限管理界面</td></tr><tr><td>显示注销结果</td><td>被动对象</td><td>权限管理界面</td><td>管理员</td></tr></tbody></table>
+<p>对象接收/发送信息的描述表</p>
+<p><strong>授予用户管理员权限</strong></p>
+<p>图图 25 授予用户管理员权限顺序图</p>
+<p>文字说明</p>
+<p>① 顺序图综述</p>
+<p>此顺序图描述了管理员授予用户管理员权限的过程</p>
+<p>② 顺序图中的对象描述</p>
+<p>管理员为主动对象，其他对象为被动对象</p>
+<p>表表 23 对象接收/发送信息的描述</p>
+<table><thead><tr><th>消息名称</th><th>消息类型</th><th>发送消息的对象名称</th><th></th><th>接收消息的对象名称</th></tr></thead><tbody><tr><td>授予用户管理员权限</td><td>主动对象</td><td>管理员</td><td>权限管理界面</td><td></td></tr><tr><td>显示授予界面</td><td>被动对象</td><td>权限管理界面</td><td>管理员</td><td></td></tr><tr><td>确认授予管理员权限</td><td>主动对象</td><td>管理员</td><td>权限管理界面</td><td></td></tr><tr><td>处理授予管理员身份请求</td><td>被动对象</td><td>权限管理界面</td><td>授权</td><td></td></tr><tr><td>修改用户权限数据</td><td>被动对象</td><td>授权</td><td>用户信息</td><td></td></tr><tr><td>执行修改操作</td><td>被动对象</td><td>用户信息</td><td>用户信息</td><td></td></tr><tr><td>返回修改结果</td><td>被动对象</td><td>用户权限信息</td><td>授权</td><td></td></tr><tr><td>返回修改结果</td><td>被动对象</td><td>授权</td><td>权限管理界面</td><td></td></tr><tr><td>显示授予结果</td><td>被动对象</td><td>权限管理界面</td><td>管理员</td><td></td></tr></tbody></table>
+<h1>4 数据需求</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="41-静态数据">4.1 静态数据<a href="#41-静态数据" class="hash-link" aria-label="4.1 静态数据的直接链接" title="4.1 静态数据的直接链接">​</a></h2>
+<p>需要存储在磁盘上的文件、数据表等。</p>
+<p>数据库中的静态数据包括用户账户信息等具体信息，这些信息生成后基本不发生变化，归于静态数据类。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="42-动态数据">4.2 动态数据<a href="#42-动态数据" class="hash-link" aria-label="4.2 动态数据的直接链接" title="4.2 动态数据的直接链接">​</a></h2>
+<p>运行过程需要临时输入的数据和输出的数据等。</p>
+<p>数据库中知识图谱等具体信息为动态信息，会随着业务过程和业务积累而发生改变，对于这类数据我们要把它归于动态数据类。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="43-数据字典">4.3 数据字典<a href="#43-数据字典" class="hash-link" aria-label="4.3 数据字典的直接链接" title="4.3 数据字典的直接链接">​</a></h2>
+<p>采用结构化分析方法时，需要对数据流图中的数据流、数据存储以及它们的数据项进行详细定义，对实体-关系图中的实体、关系属性进行详细定义。</p>
+<p>表表 1 用户表</p>
+<table><thead><tr><th>数据名称</th><th>含义</th><th>数据类型</th><th>长度</th><th>约束</th></tr></thead><tbody><tr><td>user_id</td><td>用户号</td><td>int</td><td>10</td><td>primary key</td></tr><tr><td>username</td><td>用户名</td><td>varchar</td><td>50</td><td></td></tr><tr><td>password</td><td>密码</td><td>varchar</td><td>50</td><td></td></tr><tr><td>e_mail</td><td>邮箱</td><td>varchar</td><td>50</td><td></td></tr><tr><td>role</td><td>角色</td><td>bite</td><td>1</td><td></td></tr></tbody></table>
+<p>表表 2 权限表</p>
+<table><thead><tr><th>数据名称</th><th>含义</th><th>数据类型</th><th>长度</th><th>约束</th></tr></thead><tbody><tr><td>permission_id</td><td>权限号</td><td>int</td><td>10</td><td>primary key</td></tr><tr><td>permission_name</td><td>权限名</td><td>varchar</td><td>50</td><td></td></tr></tbody></table>
+<p>表表 3 用户权限表</p>
+<table><thead><tr><th>数据名称</th><th>含义</th><th>数据类型</th><th>长度</th><th>约束</th></tr></thead><tbody><tr><td>user_permission_id</td><td>用户权限号</td><td>int</td><td>10</td><td>primary key</td></tr><tr><td>user_id</td><td>用户号</td><td>int</td><td>10</td><td>foreign key</td></tr><tr><td>permission_id</td><td>权限号</td><td>int</td><td>10</td><td>foreign key</td></tr><tr><td>is_allowed</td><td>允许状态</td><td>bite</td><td>1</td><td></td></tr></tbody></table>
+<p>表表 4 文献表</p>
+<table><thead><tr><th>数据名称</th><th>含义</th><th>数据类型</th><th>长度</th><th>约束</th></tr></thead><tbody><tr><td>document_id</td><td>文献号</td><td>int</td><td>10</td><td>primary key</td></tr><tr><td>username</td><td>上传用户名</td><td>varchar</td><td>50</td><td></td></tr><tr><td>title</td><td>标题</td><td>varchar</td><td>50</td><td></td></tr><tr><td>context</td><td>内容</td><td>varchar</td><td>50</td><td></td></tr><tr><td>creat_time</td><td>上传时间</td><td>varchar</td><td>50</td><td></td></tr><tr><td>update_time</td><td>更新时间</td><td>varchar</td><td>50</td><td></td></tr></tbody></table>
+<p>表表 5 问答对表</p>
+<table><thead><tr><th>数据名称</th><th>含义</th><th>数据类型</th><th>长度</th><th>约束</th></tr></thead><tbody><tr><td>q_a_id</td><td>问答对号</td><td>int</td><td>10</td><td>primary key</td></tr><tr><td>question</td><td>问题</td><td>varchar</td><td>50</td><td></td></tr><tr><td>answer</td><td>答案</td><td>varchar</td><td>50</td><td></td></tr><tr><td>document_id</td><td>文献号</td><td>int</td><td>10</td><td>foreign key</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="44-数据库描述">4.4 数据库描述<a href="#44-数据库描述" class="hash-link" aria-label="4.4 数据库描述的直接链接" title="4.4 数据库描述的直接链接">​</a></h2>
+<p>若系统使用数据库，采用实体-关系图（E-R 图）建模数据库概念模型。</p>
+<p><img decoding="async" loading="lazy" alt="descript" src="/assets/images/image14-ef61a6a1187917ad759523d0a7fd6061.png" width="865" height="1064" class="img_ev3q"></p>
+<h1>5 性能需求</h1>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="51-数据精度">5.1 数据精度<a href="#51-数据精度" class="hash-link" aria-label="5.1 数据精度的直接链接" title="5.1 数据精度的直接链接">​</a></h3>
+<p>说明对该软件的输入、输出数据精度的要求，可能包括传输过程中的精度。</p>
+<p>对于用户文件上传，问答对以及知识图谱等都要在短时间内迅速更新，数据准确无误，保证高精度。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="52-时间特性">5.2 时间特性<a href="#52-时间特性" class="hash-link" aria-label="5.2 时间特性的直接链接" title="5.2 时间特性的直接链接">​</a></h3>
+<p>说明对于该软件的时间特性要求，如对响应时间、更新处理时间、数据的转换和传送时间以及计算时间等的要求。</p>
+<p>响应时间：所有的查询操作、查询响应时间一般不超过 3 秒。</p>
+<p>更新处理时间：由系统运行状态决定，一般审核期为 30 分钟。</p>
+<p>数据的转换和传送时间：能够在 10s 内完成。</p>
+<p>计算时间：依据系统运行状态与计算量决定。</p>
+<h1>6 运行需求</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="61-用户界面">6.1 用户界面<a href="#61-用户界面" class="hash-link" aria-label="6.1 用户界面的直接链接" title="6.1 用户界面的直接链接">​</a></h2>
+<p>描述对该系统用户界面的基本要求，可以给出用户界面原型方案。</p>
+<p>注意：根据系统功能来推断需要哪些用户界面，依次陈述每个界面的功能，界面接收的输入数据，界面输出的数据。<strong>陈 述逻辑应与 3.2 的功能描述的功能对应。</strong></p>
+<p><strong>本部分不用画出具体的界面设计图，设计图放到《概要设计说明书》的用户界面来画。</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="62-软件接口">6.2 软件接口<a href="#62-软件接口" class="hash-link" aria-label="6.2 软件接口的直接链接" title="6.2 软件接口的直接链接">​</a></h2>
+<p>描述与该系统实施相关的软件环境的要求。若系统需要与外部软件系统交互，则需给出相应接口说明。</p>
+<p>客户：</p>
+<ol>
+<li>
+<p>Web 浏览器: Chrome、 Safari、 Firefox、Microsoft Edge 及任何支持 HTML5 标准 的浏览器。</p>
+</li>
+<li>
+<p>2. 分辨率选择：1440*900、1920*1080、2k、4k。</p>
+</li>
+</ol>
+<p>管理端：</p>
+<ol>
+<li>
+<p>操作系统：Microsoft Windows 11、MacOs、Linux。</p>
+</li>
+<li>
+<p>软件设备：Pycharm、VScode、MySQL8.0。</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="63-硬件接口">6.3 硬件接口<a href="#63-硬件接口" class="hash-link" aria-label="6.3 硬件接口的直接链接" title="6.3 硬件接口的直接链接">​</a></h2>
+<p>描述与该系统实施相关硬件环境的要求。若系统需要与外部硬件系统交互，则需给出相应接口说明。</p>
+<ol>
+<li>
+<p>数据中心服务器。</p>
+</li>
+<li>
+<p>通信接口：使用人员必须在局域网环境下使用系统，而学生则可以在外部网进行访 问系统。</p>
+</li>
+</ol>
+<h1>7 其他需求</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="71-验收标准">7.1 验收标准<a href="#71-验收标准" class="hash-link" aria-label="7.1 验收标准的直接链接" title="7.1 验收标准的直接链接">​</a></h2>
+<p>1.加强系统安全性：受到恶意攻击的情形下依然能够继续正确运行及确保在授权范围内合法使用</p>
+<p>2.异常处理的提示：前端显示上传成功/失败；校园网连接成功提示</p>
+<p>3.优化检索速率：非正则表  达</p>
+<p>**明确指出系统需完成哪些功能则能够满足用户需求。此处应与第 3 部分的功能需求对应。**若有非功能需求，也应满足。</p>
+<p>推荐以表格形式列出。</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/lidianzhong/KnowledgeGraph/blob/doc/docs/documents/software-requirements-specification.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/documents/document-intro"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">文档介绍</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/documents/software-summary-design-specification"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">软件概要设计说明书</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#11-编写目的" class="table-of-contents__link toc-highlight">1.1 编写目的</a></li><li><a href="#12-背景" class="table-of-contents__link toc-highlight">1.2 背景</a></li><li><a href="#13-术语和缩略词" class="table-of-contents__link toc-highlight">1.3 术语和缩略词</a></li><li><a href="#14-参考资料" class="table-of-contents__link toc-highlight">1.4 参考资料</a></li><li><a href="#21-项目概述" class="table-of-contents__link toc-highlight">2.1 项目概述</a><ul><li><a href="#211-项目来源及背景" class="table-of-contents__link toc-highlight">2.1.1 项目来源及背景</a></li><li><a href="#212-项目目标" class="table-of-contents__link toc-highlight">2.1.2 项目目标</a></li><li><a href="#213-系统概述" class="table-of-contents__link toc-highlight">2.1.3 系统概述</a></li></ul></li><li><a href="#22-用户特点" class="table-of-contents__link toc-highlight">2.2 用户特点</a></li><li><a href="#23-假定和约束" class="table-of-contents__link toc-highlight">2.3 假定和约束</a></li><li><a href="#31-功能划分" class="table-of-contents__link toc-highlight">3.1 功能划分</a><ul><li><a href="#311-系统功能组成" class="table-of-contents__link toc-highlight">3.1.1 系统功能组成</a></li><li><a href="#312-功能编号和优先级" class="table-of-contents__link toc-highlight">3.1.2 功能编号和优先级</a></li></ul></li><li><a href="#32-功能描述" class="table-of-contents__link toc-highlight">3.2 功能描述</a><ul><li><a href="#321-用户管理" class="table-of-contents__link toc-highlight">3.2.1 用户管理</a></li><li><a href="#322-文献库管理" class="table-of-contents__link toc-highlight">3.2.2 文献库管理</a></li><li><a href="#323-问答对管理" class="table-of-contents__link toc-highlight">3.2.3 问答对管理</a></li><li><a href="#324-知识图谱管理" class="table-of-contents__link toc-highlight">3.2.4 知识图谱管理</a></li><li><a href="#325-权限管理" class="table-of-contents__link toc-highlight">3.2.5 权限管理</a></li></ul></li><li><a href="#41-静态数据" class="table-of-contents__link toc-highlight">4.1 静态数据</a></li><li><a href="#42-动态数据" class="table-of-contents__link toc-highlight">4.2 动态数据</a></li><li><a href="#43-数据字典" class="table-of-contents__link toc-highlight">4.3 数据字典</a></li><li><a href="#44-数据库描述" class="table-of-contents__link toc-highlight">4.4 数据库描述</a><ul><li><a href="#51-数据精度" class="table-of-contents__link toc-highlight">5.1 数据精度</a></li><li><a href="#52-时间特性" class="table-of-contents__link toc-highlight">5.2 时间特性</a></li></ul></li><li><a href="#61-用户界面" class="table-of-contents__link toc-highlight">6.1 用户界面</a></li><li><a href="#62-软件接口" class="table-of-contents__link toc-highlight">6.2 软件接口</a></li><li><a href="#63-硬件接口" class="table-of-contents__link toc-highlight">6.3 硬件接口</a></li><li><a href="#71-验收标准" class="table-of-contents__link toc-highlight">7.1 验收标准</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 知识图谱智能构建系统，软件工程课程项目。</div></div></div></footer></div>
 </body>
 </html>
