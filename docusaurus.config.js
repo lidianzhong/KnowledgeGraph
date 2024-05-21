@@ -8,7 +8,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '知识图谱构建系统',
+  title: '知识图谱智能构建系统',
   tagline: '团队协作文档',
   favicon: 'img/favicon.ico',
 
@@ -67,9 +67,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: '知识图谱构建系统',
+        title: '知识图谱智能构建系统',
         logo: {
-          alt: '知识图谱构建系统 Logo',
+          alt: '知识图谱智能构建系统 Logo',
           src: 'img/favicon.ico',
         },
         items: [
@@ -101,6 +101,7 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          { to: '/blog', label: '会议记录', position: 'right' },
         ],
       },
       footer: {

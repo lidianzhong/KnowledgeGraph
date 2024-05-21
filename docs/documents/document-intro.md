@@ -1,6 +1,7 @@
 ---
 title: 文档介绍
 description: ""
+sidebar_position: 1
 ---
 
 # 知识图谱智能构建平台项目文档
@@ -11,7 +12,7 @@ description: ""
 
 https://docs.qq.com/doc/DRU14YVlqQk1FSWNL
 
-【腾讯文档】软件概要设计说明书参考模板-wy-2024
+【腾讯文档】软件概要设计说明书
 
 https://docs.qq.com/doc/DV0tOaG52c0lRSWJG
 

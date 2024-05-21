@@ -31,15 +31,19 @@ npm run serve
 
 ## 运行文档程序
 
-1. 安装 [Docusaurus](https://docusaurus.io/zh-CN/docs/installation)
+:::info[先决条件]
 
-2. 克隆本项目文档到本地
+本地安装 [Node.js](https://nodejs.org/zh-cn/) 版本大于 18.0。输入 `node -v` 查看版本号。
+
+:::
+
+1. 克隆本项目文档到本地
 
 ```sh
-git clone https://github.com/lidianzhong/KnowledgeGraph.git -b kg-doc
+git clone https://github.com/lidianzhong/KnowledgeGraph.git -b doc
 ```
 
-3. 运行本地项目
+2. 运行本地项目
 
 ```sh
  npm start

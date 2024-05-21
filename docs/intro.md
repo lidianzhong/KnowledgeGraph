@@ -55,4 +55,4 @@ import TabItem from '@theme/TabItem';
 
 **项目 API 文档：[点此跳转](https://apifox.com/apidoc/shared-fa0f1f57-5099-40f3-8a64-79c83fce82f6)**
 
-**项目文档地址：[点此跳转](#)**
+**项目文档地址：[点此跳转](http://kg.hzau.top/)**
