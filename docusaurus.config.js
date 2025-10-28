@@ -76,6 +76,7 @@ const config = {
           {
             href: 'http://121.41.15.223/',
             label: '在线演示',
+            className: 'expired-demo',
             position: 'left',
           },
           // {

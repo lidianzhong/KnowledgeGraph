@@ -28,3 +28,35 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* expired demo label: strike-through and hover tooltip */
+.navbar__link.expired-demo {
+  text-decoration: line-through;
+  position: relative;
+  cursor: default;
+  opacity: 0.9;
+}
+
+.navbar__link.expired-demo::after {
+  content: "服务器已过期";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 9999;
+}
+
+.navbar__link.expired-demo:hover::after,
+.navbar__link.expired-demo:focus::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(12px);
+}
