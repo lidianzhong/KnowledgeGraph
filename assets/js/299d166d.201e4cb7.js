@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkkg_docusaurus=globalThis.webpackChunkkg_docusaurus||[]).push([[3792],{985:s=>{s.exports=JSON.parse('{"tags":[{"label":"\u4f1a\u8bae\u8bb0\u5f55","permalink":"/KnowledgeGraph/blog/tags/\u4f1a\u8bae\u8bb0\u5f55","count":7}]}')}}]);

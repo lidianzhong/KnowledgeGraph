@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkkg_docusaurus=globalThis.webpackChunkkg_docusaurus||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/KnowledgeGraph/blog","blogTitle":"Blog"}')}}]);

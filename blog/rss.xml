@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>知识图谱智能构建系统 Blog</title>
-        <link>https://lidianzhong.github.io/blog</link>
+        <link>https://lidianzhong.github.io/KnowledgeGraph/blog</link>
         <description>知识图谱智能构建系统 Blog</description>
         <lastBuildDate>Tue, 21 May 2024 10:26:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,25 +10,25 @@
         <language>zh-Hans</language>
         <item>
             <title><![CDATA[会议记录]]></title>
-            <link>https://lidianzhong.github.io/blog/meeting-records-welcome</link>
-            <guid>https://lidianzhong.github.io/blog/meeting-records-welcome</guid>
+            <link>https://lidianzhong.github.io/KnowledgeGraph/blog/meeting-records-welcome</link>
+            <guid>https://lidianzhong.github.io/KnowledgeGraph/blog/meeting-records-welcome</guid>
             <pubDate>Tue, 21 May 2024 10:26:31 GMT</pubDate>
             <description><![CDATA[记录所有的会议内容，包括会议议程、讨论过程、后续安排、内容记录等。]]></description>
             <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>信息</div><div class="admonitionContent_BuS1"><p>记录所有的会议内容，包括会议议程、讨论过程、后续安排、内容记录等。</p></div></div>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[2024年5月14日第七次例会]]></title>
-            <link>https://lidianzhong.github.io/blog/2024/5/14/seventh-meeting-record</link>
-            <guid>https://lidianzhong.github.io/blog/2024/5/14/seventh-meeting-record</guid>
+            <link>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/5/14/seventh-meeting-record</link>
+            <guid>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/5/14/seventh-meeting-record</guid>
             <pubDate>Tue, 14 May 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[会议主题： 待完成任务分配]]></description>
             <content:encoded><![CDATA[<p><strong>会议主题：</strong> 待完成任务分配<br>
 <strong>参会人员：</strong> 全体小组成员<br>
 <strong>时间：</strong> 2024.05.14 下午 3:00-9:40<br>
 <strong>地点：</strong> 梦泽园二楼</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="讨论内容">讨论内容：<a href="https://lidianzhong.github.io/blog/2024/5/14/seventh-meeting-record#%E8%AE%A8%E8%AE%BA%E5%86%85%E5%AE%B9" class="hash-link" aria-label="讨论内容：的直接链接" title="讨论内容：的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="讨论内容">讨论内容：<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/5/14/seventh-meeting-record#%E8%AE%A8%E8%AE%BA%E5%86%85%E5%AE%B9" class="hash-link" aria-label="讨论内容：的直接链接" title="讨论内容：的直接链接">​</a></h3>
 <p>明确了四个文档剩余的该完成的工作，并分配任务。</p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="需求文档">需求文档：<a href="https://lidianzhong.github.io/blog/2024/5/14/seventh-meeting-record#%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3" class="hash-link" aria-label="需求文档：的直接链接" title="需求文档：的直接链接">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="需求文档">需求文档：<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/5/14/seventh-meeting-record#%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3" class="hash-link" aria-label="需求文档：的直接链接" title="需求文档：的直接链接">​</a></h4>
 <p><strong>3.2 功能描述</strong></p>
 <ol>
 <li>对功能建模：构建用例图，需要给出主要用例场景描述（正常、异常、替代分支），并辅以 UML 动态图（如活动图）给予补充说明。（活动图已有）（刘佳乐）</li>
@@ -36,7 +36,7 @@
 <li>系统动态行为建模：使用 UML 动态图（如顺序图、通信图等）对对象间交互行为进行动态建模，进一步精化用例实现。（顺序图已有部分）（刘佳乐）</li>
 </ol>
 <p><strong>6.1 用户界面（可最后）</strong></p>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="软件概要文档">软件概要文档：<a href="https://lidianzhong.github.io/blog/2024/5/14/seventh-meeting-record#%E8%BD%AF%E4%BB%B6%E6%A6%82%E8%A6%81%E6%96%87%E6%A1%A3" class="hash-link" aria-label="软件概要文档：的直接链接" title="软件概要文档：的直接链接">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="软件概要文档">软件概要文档：<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/5/14/seventh-meeting-record#%E8%BD%AF%E4%BB%B6%E6%A6%82%E8%A6%81%E6%96%87%E6%A1%A3" class="hash-link" aria-label="软件概要文档：的直接链接" title="软件概要文档：的直接链接">​</a></h4>
 <p><strong>2.1 需求复审</strong></p>
 <ul>
 <li>如果采用面向对象分析与设计方法，复审需求规格说明书中的用例图、用例场景描述及类图，对其补充完善（此处给出业务类图即可）。（可以从需求文档迁移）（刘佳乐）</li>
@@ -55,7 +55,7 @@
 <ul>
 <li>模块（构件）之间的接口数据描述，包含接口参数含义、顺序、默认值等。例如前后端接口，后端各模块间接口 采用表格形式描述。</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="软件详细设计说明">软件详细设计说明：<a href="https://lidianzhong.github.io/blog/2024/5/14/seventh-meeting-record#%E8%BD%AF%E4%BB%B6%E8%AF%A6%E7%BB%86%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E" class="hash-link" aria-label="软件详细设计说明：的直接链接" title="软件详细设计说明：的直接链接">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="软件详细设计说明">软件详细设计说明：<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/5/14/seventh-meeting-record#%E8%BD%AF%E4%BB%B6%E8%AF%A6%E7%BB%86%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E" class="hash-link" aria-label="软件详细设计说明：的直接链接" title="软件详细设计说明：的直接链接">​</a></h4>
 <p><strong>2.2 软件结构</strong></p>
 <ul>
 <li>将概要设计说明书中的软件逻辑体系结构图展示在此处，并使用文字简要描述该图的结构组成。（已）</li>
@@ -77,13 +77,13 @@
 <ul>
 <li>列出本模块的单元测试计划。 以测试用例形式给出：输入数据、预期结果。（可在测试报告中描述这部分内容）</li>
 </ul>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="软件测试文档">软件测试文档：<a href="https://lidianzhong.github.io/blog/2024/5/14/seventh-meeting-record#%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%96%87%E6%A1%A3" class="hash-link" aria-label="软件测试文档：的直接链接" title="软件测试文档：的直接链接">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="软件测试文档">软件测试文档：<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/5/14/seventh-meeting-record#%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%96%87%E6%A1%A3" class="hash-link" aria-label="软件测试文档：的直接链接" title="软件测试文档：的直接链接">​</a></h4>
 <p><strong>3.3 结论及建议</strong></p>
 <ol>
 <li>针对上述所有测试用例执行，对软件功能的实现正确性进行概述总结。参照需求规格说明书，指明软件实现了哪些功能，哪些功能实现仍然有缺陷，哪些功能未完成。</li>
 <li>对于有缺陷的功能给出修改建议。</li>
 </ol>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="其它">其它：<a href="https://lidianzhong.github.io/blog/2024/5/14/seventh-meeting-record#%E5%85%B6%E5%AE%83" class="hash-link" aria-label="其它：的直接链接" title="其它：的直接链接">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="其它">其它：<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/5/14/seventh-meeting-record#%E5%85%B6%E5%AE%83" class="hash-link" aria-label="其它：的直接链接" title="其它：的直接链接">​</a></h4>
 <ol>
 <li>一个 txt 文档：给出 GitHub 或者 Gitee 地址，简要的软件使用说明。</li>
 <li>README.md。</li>
@@ -93,15 +93,15 @@
         </item>
         <item>
             <title><![CDATA[2024年5月11日第六次例会]]></title>
-            <link>https://lidianzhong.github.io/blog/2024/5/11/sixth-meeting-record</link>
-            <guid>https://lidianzhong.github.io/blog/2024/5/11/sixth-meeting-record</guid>
+            <link>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/5/11/sixth-meeting-record</link>
+            <guid>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/5/11/sixth-meeting-record</guid>
             <pubDate>Sat, 11 May 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[会议主题： 讨论撰写《软件详细设计说明书》]]></description>
             <content:encoded><![CDATA[<p><strong>会议主题：</strong> 讨论撰写《软件详细设计说明书》<br>
 <strong>参会人员：</strong> 全体小组成员<br>
 <strong>时间：</strong> 2024.05.11 下午 7:00-9:30<br>
 <strong>地点：</strong> 梦泽园二楼</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="会议内容">会议内容：<a href="https://lidianzhong.github.io/blog/2024/5/11/sixth-meeting-record#%E4%BC%9A%E8%AE%AE%E5%86%85%E5%AE%B9" class="hash-link" aria-label="会议内容：的直接链接" title="会议内容：的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="会议内容">会议内容：<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/5/11/sixth-meeting-record#%E4%BC%9A%E8%AE%AE%E5%86%85%E5%AE%B9" class="hash-link" aria-label="会议内容：的直接链接" title="会议内容：的直接链接">​</a></h3>
 <ol>
 <li>对上两周完成的工作进行讨论和优化。</li>
 <li>对接下来需要完成的工作进行了详细的讨论：<!-- -->
@@ -118,15 +118,15 @@
         </item>
         <item>
             <title><![CDATA[2024年4月28日第五次例会]]></title>
-            <link>https://lidianzhong.github.io/blog/2024/4/28/fivth-meeting-record</link>
-            <guid>https://lidianzhong.github.io/blog/2024/4/28/fivth-meeting-record</guid>
+            <link>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/4/28/fivth-meeting-record</link>
+            <guid>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/4/28/fivth-meeting-record</guid>
             <pubDate>Sun, 28 Apr 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[会议主题： 讨论撰写《软件概要设计说明书》]]></description>
             <content:encoded><![CDATA[<p><strong>会议主题：</strong> 讨论撰写《软件概要设计说明书》<br>
 <strong>参会人员：</strong> 全体小组成员<br>
 <strong>时间：</strong> 2024.04.28 下午 3:15-6:15<br>
 <strong>地点：</strong> 腾讯会议</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="会议内容">会议内容：<a href="https://lidianzhong.github.io/blog/2024/4/28/fivth-meeting-record#%E4%BC%9A%E8%AE%AE%E5%86%85%E5%AE%B9" class="hash-link" aria-label="会议内容：的直接链接" title="会议内容：的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="会议内容">会议内容：<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/4/28/fivth-meeting-record#%E4%BC%9A%E8%AE%AE%E5%86%85%E5%AE%B9" class="hash-link" aria-label="会议内容：的直接链接" title="会议内容：的直接链接">​</a></h3>
 <ol>
 <li>更加详细地刻画了用户需求，并添加了用户场景的一系列场景描述。</li>
 <li>更加详细地描述了各个类需要完成的具体功能，并明确绘制了 CRC 卡。</li>
@@ -137,15 +137,15 @@
         </item>
         <item>
             <title><![CDATA[2024年3月17日第四次例会]]></title>
-            <link>https://lidianzhong.github.io/blog/2024/4/13/forth-meeting-record</link>
-            <guid>https://lidianzhong.github.io/blog/2024/4/13/forth-meeting-record</guid>
+            <link>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/4/13/forth-meeting-record</link>
+            <guid>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/4/13/forth-meeting-record</guid>
             <pubDate>Sat, 13 Apr 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[会议主题： 讨论完善《需求规格说明书》]]></description>
             <content:encoded><![CDATA[<p><strong>会议主题：</strong> 讨论完善《需求规格说明书》<br>
 <strong>参会人员：</strong> 全体小组成员<br>
 <strong>时间：</strong> 2024.04.13 下午 1:15-6:00<br>
 <strong>地点：</strong> 腾讯会议</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="会议内容">会议内容：<a href="https://lidianzhong.github.io/blog/2024/4/13/forth-meeting-record#%E4%BC%9A%E8%AE%AE%E5%86%85%E5%AE%B9" class="hash-link" aria-label="会议内容：的直接链接" title="会议内容：的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="会议内容">会议内容：<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/4/13/forth-meeting-record#%E4%BC%9A%E8%AE%AE%E5%86%85%E5%AE%B9" class="hash-link" aria-label="会议内容：的直接链接" title="会议内容：的直接链接">​</a></h3>
 <ol>
 <li>讨论明确了项目背景。</li>
 <li>明确了整个软件的系统构成。</li>
@@ -160,27 +160,27 @@
         </item>
         <item>
             <title><![CDATA[2024年3月17日第三次例会]]></title>
-            <link>https://lidianzhong.github.io/blog/2024/3/17/third-meeting-record</link>
-            <guid>https://lidianzhong.github.io/blog/2024/3/17/third-meeting-record</guid>
+            <link>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/17/third-meeting-record</link>
+            <guid>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/17/third-meeting-record</guid>
             <pubDate>Sun, 17 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[会议主题： 项目用例图]]></description>
             <content:encoded><![CDATA[<p><strong>会议主题：</strong> 项目用例图<br>
 <strong>参会人员：</strong> 全体小组人员<br>
 <strong>时间：</strong> 2024.03.17 下午 3:00-9:30<br>
 <strong>地点：</strong> 梦泽园二楼</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="done">Done<a href="https://lidianzhong.github.io/blog/2024/3/17/third-meeting-record#done" class="hash-link" aria-label="Done的直接链接" title="Done的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="done">Done<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/17/third-meeting-record#done" class="hash-link" aria-label="Done的直接链接" title="Done的直接链接">​</a></h3>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->解决了用户注册功能的问题</li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->完成项目用例图讨论</li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->完成 API 文档的编写</li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->完成 UML 图的编写</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="doing">Doing<a href="https://lidianzhong.github.io/blog/2024/3/17/third-meeting-record#doing" class="hash-link" aria-label="Doing的直接链接" title="Doing的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="doing">Doing<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/17/third-meeting-record#doing" class="hash-link" aria-label="Doing的直接链接" title="Doing的直接链接">​</a></h3>
 <ul>
 <li>新增显示功能状态：上传中，下载中...</li>
 <li>权限部分为用户---管理员----超级管理员三级</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="todo">Todo<a href="https://lidianzhong.github.io/blog/2024/3/17/third-meeting-record#todo" class="hash-link" aria-label="Todo的直接链接" title="Todo的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="todo">Todo<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/17/third-meeting-record#todo" class="hash-link" aria-label="Todo的直接链接" title="Todo的直接链接">​</a></h3>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->新增超级管理员板块（待实现）</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->拥有管理员所有权限（除管理员对用户）</li>
@@ -198,21 +198,21 @@
         </item>
         <item>
             <title><![CDATA[2024年3月10日第二次例会]]></title>
-            <link>https://lidianzhong.github.io/blog/2024/3/10/second-meeting-record</link>
-            <guid>https://lidianzhong.github.io/blog/2024/3/10/second-meeting-record</guid>
+            <link>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/10/second-meeting-record</link>
+            <guid>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/10/second-meeting-record</guid>
             <pubDate>Sun, 10 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[第二次例会]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第二次例会">第二次例会<a href="https://lidianzhong.github.io/blog/2024/3/10/second-meeting-record#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BE%8B%E4%BC%9A" class="hash-link" aria-label="第二次例会的直接链接" title="第二次例会的直接链接">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第二次例会">第二次例会<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/10/second-meeting-record#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%BE%8B%E4%BC%9A" class="hash-link" aria-label="第二次例会的直接链接" title="第二次例会的直接链接">​</a></h2>
 <p><strong>会议主题：</strong> 用户需求<br>
 <strong>参会人员：</strong> 全体小组人员<br>
 <strong>时间：</strong> 2024.03.10 下午 3:00-9:30<br>
 <strong>地点：</strong> 梦泽园二楼</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="done">Done:<a href="https://lidianzhong.github.io/blog/2024/3/10/second-meeting-record#done" class="hash-link" aria-label="Done:的直接链接" title="Done:的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="done">Done:<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/10/second-meeting-record#done" class="hash-link" aria-label="Done:的直接链接" title="Done:的直接链接">​</a></h3>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->搭建项目文档</li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->熟悉飞书共享文件操作</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="doing">Doing:<a href="https://lidianzhong.github.io/blog/2024/3/10/second-meeting-record#doing" class="hash-link" aria-label="Doing:的直接链接" title="Doing:的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="doing">Doing:<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/10/second-meeting-record#doing" class="hash-link" aria-label="Doing:的直接链接" title="Doing:的直接链接">​</a></h3>
 <ul>
 <li>将 git 文档同步远程，并熟悉文档的框架</li>
 <li>规定 git 代码以及文档合作使用方法</li>
@@ -220,7 +220,7 @@
 <li>熟悉将迭代的项目，通过测试获取并记录项目的优势和劣势</li>
 <li>通过正式会谈的会谈技术和场景分析技术获取需求，并进行需求分析讨论</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="to-do">To do：<a href="https://lidianzhong.github.io/blog/2024/3/10/second-meeting-record#to-do" class="hash-link" aria-label="To do：的直接链接" title="To do：的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="to-do">To do：<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/10/second-meeting-record#to-do" class="hash-link" aria-label="To do：的直接链接" title="To do：的直接链接">​</a></h3>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->将用户需求转化为软件功能需求</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->编写软件需求文档</li>
@@ -229,16 +229,16 @@
         </item>
         <item>
             <title><![CDATA[2024年3月3日第一次例会]]></title>
-            <link>https://lidianzhong.github.io/blog/2024/3/3/first-meeting-record</link>
-            <guid>https://lidianzhong.github.io/blog/2024/3/3/first-meeting-record</guid>
+            <link>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/3/first-meeting-record</link>
+            <guid>https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/3/first-meeting-record</guid>
             <pubDate>Sun, 03 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[第一次例会]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第一次例会">第一次例会<a href="https://lidianzhong.github.io/blog/2024/3/3/first-meeting-record#%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BE%8B%E4%BC%9A" class="hash-link" aria-label="第一次例会的直接链接" title="第一次例会的直接链接">​</a></h2>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第一次例会">第一次例会<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/3/first-meeting-record#%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BE%8B%E4%BC%9A" class="hash-link" aria-label="第一次例会的直接链接" title="第一次例会的直接链接">​</a></h2>
 <p><strong>会议主题：</strong> 项目初讨论<br>
 <strong>参会人员：</strong> 全体小组人员<br>
 <strong>时间：</strong> 2024.03.03 下午 3:00-6:00<br>
 <strong>地点：</strong> 桃园食堂一楼</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="议程-1项目环境配置问题">议程 1：项目环境配置问题<a href="https://lidianzhong.github.io/blog/2024/3/3/first-meeting-record#%E8%AE%AE%E7%A8%8B-1%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98" class="hash-link" aria-label="议程 1：项目环境配置问题的直接链接" title="议程 1：项目环境配置问题的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="议程-1项目环境配置问题">议程 1：项目环境配置问题<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/3/first-meeting-record#%E8%AE%AE%E7%A8%8B-1%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98" class="hash-link" aria-label="议程 1：项目环境配置问题的直接链接" title="议程 1：项目环境配置问题的直接链接">​</a></h3>
 <p><strong>讨论过程：</strong></p>
 <ul>
 <li>代码同步选用 Github 仓库同步代码</li>
@@ -251,7 +251,7 @@
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->熟悉 Git 操作，学习 Git 指令</li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->代码同步到远程仓库</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="议程-2简单分析项目需求">议程 2：简单分析项目需求<a href="https://lidianzhong.github.io/blog/2024/3/3/first-meeting-record#%E8%AE%AE%E7%A8%8B-2%E7%AE%80%E5%8D%95%E5%88%86%E6%9E%90%E9%A1%B9%E7%9B%AE%E9%9C%80%E6%B1%82" class="hash-link" aria-label="议程 2：简单分析项目需求的直接链接" title="议程 2：简单分析项目需求的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="议程-2简单分析项目需求">议程 2：简单分析项目需求<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/3/first-meeting-record#%E8%AE%AE%E7%A8%8B-2%E7%AE%80%E5%8D%95%E5%88%86%E6%9E%90%E9%A1%B9%E7%9B%AE%E9%9C%80%E6%B1%82" class="hash-link" aria-label="议程 2：简单分析项目需求的直接链接" title="议程 2：简单分析项目需求的直接链接">​</a></h3>
 <p><strong>讨论过程：</strong></p>
 <ul>
 <li>界面样式可做更好看的优化</li>
@@ -262,7 +262,7 @@
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->查阅网络好看的页面样式作为参考</li>
 <li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->持续思考可扩展的新增功能</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="议程-3项目合作流程">议程 3：项目合作流程<a href="https://lidianzhong.github.io/blog/2024/3/3/first-meeting-record#%E8%AE%AE%E7%A8%8B-3%E9%A1%B9%E7%9B%AE%E5%90%88%E4%BD%9C%E6%B5%81%E7%A8%8B" class="hash-link" aria-label="议程 3：项目合作流程的直接链接" title="议程 3：项目合作流程的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="议程-3项目合作流程">议程 3：项目合作流程<a href="https://lidianzhong.github.io/KnowledgeGraph/blog/2024/3/3/first-meeting-record#%E8%AE%AE%E7%A8%8B-3%E9%A1%B9%E7%9B%AE%E5%90%88%E4%BD%9C%E6%B5%81%E7%A8%8B" class="hash-link" aria-label="议程 3：项目合作流程的直接链接" title="议程 3：项目合作流程的直接链接">​</a></h3>
 <p><strong>讨论过程：</strong></p>
 <ul>
 <li>项目文档同步选用飞书共享文件进行文档同步</li>
