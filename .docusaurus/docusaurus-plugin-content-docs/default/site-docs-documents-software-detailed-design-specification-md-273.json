@@ -1,0 +1,29 @@
+{
+  "id": "documents/software-detailed-design-specification",
+  "title": "软件详细设计说明书",
+  "description": "",
+  "source": "@site/docs/documents/software-detailed-design-specification.md",
+  "sourceDirName": "documents",
+  "slug": "/documents/software-detailed-design-specification",
+  "permalink": "/KnowledgeGraph/docs/documents/software-detailed-design-specification",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/lidianzhong/KnowledgeGraph/blob/doc/docs/documents/software-detailed-design-specification.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "软件详细设计说明书",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "软件概要设计说明书",
+    "permalink": "/KnowledgeGraph/docs/documents/software-summary-design-specification"
+  },
+  "next": {
+    "title": "软件测试报告",
+    "permalink": "/KnowledgeGraph/docs/documents/software-test-report"
+  }
+}

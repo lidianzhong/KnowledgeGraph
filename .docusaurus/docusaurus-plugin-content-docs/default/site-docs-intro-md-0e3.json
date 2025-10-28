@@ -1,0 +1,23 @@
+{
+  "id": "intro",
+  "title": "项目概述",
+  "description": "项目简介",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/KnowledgeGraph/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/lidianzhong/KnowledgeGraph/blob/doc/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "项目文档",
+    "permalink": "/KnowledgeGraph/docs/category/项目文档"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "start/install",
+  "title": "环境搭建",
+  "description": "搭建前后端项目和文档项目",
+  "source": "@site/docs/start/install.md",
+  "sourceDirName": "start",
+  "slug": "/start/install",
+  "permalink": "/KnowledgeGraph/docs/start/install",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/lidianzhong/KnowledgeGraph/blob/doc/docs/start/install.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "description": "搭建前后端项目和文档项目"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "开始上手",
+    "permalink": "/KnowledgeGraph/docs/category/开始上手"
+  }
+}

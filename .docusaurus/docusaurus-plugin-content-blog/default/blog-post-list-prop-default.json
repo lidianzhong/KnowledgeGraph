@@ -1,0 +1,30 @@
+{
+  "title": "Recent posts",
+  "items": [
+    {
+      "title": "会议记录",
+      "permalink": "/KnowledgeGraph/blog/meeting-records-welcome",
+      "unlisted": false
+    },
+    {
+      "title": "2024年5月14日第七次例会",
+      "permalink": "/KnowledgeGraph/blog/2024/5/14/seventh-meeting-record",
+      "unlisted": false
+    },
+    {
+      "title": "2024年5月11日第六次例会",
+      "permalink": "/KnowledgeGraph/blog/2024/5/11/sixth-meeting-record",
+      "unlisted": false
+    },
+    {
+      "title": "2024年4月28日第五次例会",
+      "permalink": "/KnowledgeGraph/blog/2024/4/28/fivth-meeting-record",
+      "unlisted": false
+    },
+    {
+      "title": "2024年3月17日第四次例会",
+      "permalink": "/KnowledgeGraph/blog/2024/4/13/forth-meeting-record",
+      "unlisted": false
+    }
+  ]
+}

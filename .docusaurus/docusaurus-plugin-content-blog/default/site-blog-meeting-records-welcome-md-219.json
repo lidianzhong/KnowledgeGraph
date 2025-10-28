@@ -1,0 +1,20 @@
+{
+  "permalink": "/KnowledgeGraph/blog/meeting-records-welcome",
+  "editUrl": "https://github.com/lidianzhong/KnowledgeGraph/blob/doc/blog/meeting-records-welcome.md",
+  "source": "@site/blog/meeting-records-welcome.md",
+  "title": "会议记录",
+  "description": "记录所有的会议内容，包括会议议程、讨论过程、后续安排、内容记录等。",
+  "date": "2024-05-21T10:26:31.000Z",
+  "tags": [],
+  "readingTime": 0.145,
+  "hasTruncateMarker": false,
+  "authors": [],
+  "frontMatter": {
+    "slug": "/meeting-records-welcome"
+  },
+  "unlisted": false,
+  "nextItem": {
+    "title": "2024年5月14日第七次例会",
+    "permalink": "/KnowledgeGraph/blog/2024/5/14/seventh-meeting-record"
+  }
+}

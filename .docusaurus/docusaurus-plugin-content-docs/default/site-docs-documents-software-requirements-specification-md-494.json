@@ -1,0 +1,29 @@
+{
+  "id": "documents/software-requirements-specification",
+  "title": "软件需求规格说明书",
+  "description": "",
+  "source": "@site/docs/documents/software-requirements-specification.md",
+  "sourceDirName": "documents",
+  "slug": "/documents/software-requirements-specification",
+  "permalink": "/KnowledgeGraph/docs/documents/software-requirements-specification",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/lidianzhong/KnowledgeGraph/blob/doc/docs/documents/software-requirements-specification.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "软件需求规格说明书",
+    "description": "",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "文档介绍",
+    "permalink": "/KnowledgeGraph/docs/documents/document-intro"
+  },
+  "next": {
+    "title": "软件概要设计说明书",
+    "permalink": "/KnowledgeGraph/docs/documents/software-summary-design-specification"
+  }
+}

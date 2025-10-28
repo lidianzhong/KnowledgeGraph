@@ -1,0 +1,32 @@
+{
+  "permalink": "/KnowledgeGraph/blog/2024/4/13/forth-meeting-record",
+  "editUrl": "https://github.com/lidianzhong/KnowledgeGraph/blob/doc/blog/2024-4-13-forth-meeting-record.md",
+  "source": "@site/blog/2024-4-13-forth-meeting-record.md",
+  "title": "2024年3月17日第四次例会",
+  "description": "会议主题： 讨论完善《需求规格说明书》",
+  "date": "2024-04-13T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "会议记录",
+      "permalink": "/KnowledgeGraph/blog/tags/会议记录"
+    }
+  ],
+  "readingTime": 1.125,
+  "hasTruncateMarker": false,
+  "authors": [],
+  "frontMatter": {
+    "title": "2024年3月17日第四次例会",
+    "tags": [
+      "会议记录"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "2024年4月28日第五次例会",
+    "permalink": "/KnowledgeGraph/blog/2024/4/28/fivth-meeting-record"
+  },
+  "nextItem": {
+    "title": "2024年3月17日第三次例会",
+    "permalink": "/KnowledgeGraph/blog/2024/3/17/third-meeting-record"
+  }
+}

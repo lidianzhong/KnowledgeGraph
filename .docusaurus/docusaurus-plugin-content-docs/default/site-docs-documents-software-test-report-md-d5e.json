@@ -1,0 +1,29 @@
+{
+  "id": "documents/software-test-report",
+  "title": "软件测试报告",
+  "description": "",
+  "source": "@site/docs/documents/software-test-report.md",
+  "sourceDirName": "documents",
+  "slug": "/documents/software-test-report",
+  "permalink": "/KnowledgeGraph/docs/documents/software-test-report",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/lidianzhong/KnowledgeGraph/blob/doc/docs/documents/software-test-report.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "软件测试报告",
+    "description": "",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "软件详细设计说明书",
+    "permalink": "/KnowledgeGraph/docs/documents/software-detailed-design-specification"
+  },
+  "next": {
+    "title": "开始上手",
+    "permalink": "/KnowledgeGraph/docs/category/开始上手"
+  }
+}

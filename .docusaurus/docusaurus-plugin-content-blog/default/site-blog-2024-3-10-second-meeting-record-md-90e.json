@@ -1,0 +1,32 @@
+{
+  "permalink": "/KnowledgeGraph/blog/2024/3/10/second-meeting-record",
+  "editUrl": "https://github.com/lidianzhong/KnowledgeGraph/blob/doc/blog/2024-3-10-second-meeting-record.md",
+  "source": "@site/blog/2024-3-10-second-meeting-record.md",
+  "title": "2024年3月10日第二次例会",
+  "description": "第二次例会",
+  "date": "2024-03-10T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "会议记录",
+      "permalink": "/KnowledgeGraph/blog/tags/会议记录"
+    }
+  ],
+  "readingTime": 0.95,
+  "hasTruncateMarker": false,
+  "authors": [],
+  "frontMatter": {
+    "title": "2024年3月10日第二次例会",
+    "tags": [
+      "会议记录"
+    ]
+  },
+  "unlisted": false,
+  "prevItem": {
+    "title": "2024年3月17日第三次例会",
+    "permalink": "/KnowledgeGraph/blog/2024/3/17/third-meeting-record"
+  },
+  "nextItem": {
+    "title": "2024年3月3日第一次例会",
+    "permalink": "/KnowledgeGraph/blog/2024/3/3/first-meeting-record"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "/KnowledgeGraph/__docusaurus/debug-b67": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---knowledge-graph-docusaurus-debugb-38-131"
+    }
+  },
+  "/KnowledgeGraph/__docusaurus/debug/config-840": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---knowledge-graph-docusaurus-debugb-38-131"
+    }
+  },
+  "/KnowledgeGraph/__docusaurus/debug/content-2fc": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---knowledge-graph-docusaurus-debugb-38-131"
+    },
+    "__props": "__props---knowledge-graph-docusaurus-debug-contentf-51-c5d"
+  },
+  "/KnowledgeGraph/__docusaurus/debug/globalData-584": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---knowledge-graph-docusaurus-debugb-38-131"
+    }
+  },
+  "/KnowledgeGraph/__docusaurus/debug/metadata-bae": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---knowledge-graph-docusaurus-debugb-38-131"
+    }
+  },
+  "/KnowledgeGraph/__docusaurus/debug/registry-220": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---knowledge-graph-docusaurus-debugb-38-131"
+    }
+  },
+  "/KnowledgeGraph/__docusaurus/debug/routes-f6e": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---knowledge-graph-docusaurus-debugb-38-131"
+    }
+  },
+  "/KnowledgeGraph/markdown-page-f46": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---knowledge-graph-markdown-pagea-74-717"
+    },
+    "content": "content---knowledge-graph-markdown-page-393-558"
+  },
+  "/KnowledgeGraph/docs-f71": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---knowledge-graph-docsaba-eed"
+    }
+  },
+  "/KnowledgeGraph/docs-c35": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---knowledge-graph-docs-9-f-0-e71"
+  },
+  "/KnowledgeGraph/docs-f17": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/KnowledgeGraph/docs/category/开始上手-65e": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---knowledge-graph-docs-category-开始上手bc-4-e5f"
+  },
+  "/KnowledgeGraph/docs/category/项目文档-190": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---knowledge-graph-docs-category-项目文档-0-ca-15b"
+  },
+  "/KnowledgeGraph/docs/documents/document-intro-fde": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---knowledge-graph-docs-documents-document-introde-7-b93"
+  },
+  "/KnowledgeGraph/docs/documents/software-detailed-design-specification-cd3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---knowledge-graph-docs-documents-software-detailed-design-specification-273-12e"
+  },
+  "/KnowledgeGraph/docs/documents/software-requirements-specification-454": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---knowledge-graph-docs-documents-software-requirements-specification-494-2ff"
+  },
+  "/KnowledgeGraph/docs/documents/software-summary-design-specification-5b5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---knowledge-graph-docs-documents-software-summary-design-specification-3-e-9-4ec"
+  },
+  "/KnowledgeGraph/docs/documents/software-test-report-81e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---knowledge-graph-docs-documents-software-test-reportd-5-e-6fc"
+  },
+  "/KnowledgeGraph/docs/intro-adb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---knowledge-graph-docs-intro-0-e-3-93a"
+  },
+  "/KnowledgeGraph/docs/start/install-324": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---knowledge-graph-docs-start-installdbf-ec6"
+  },
+  "/KnowledgeGraph/-dbb": {
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__context": {
+      "plugin": "plugin---knowledge-graph-markdown-pagea-74-717"
+    },
+    "config": "config---knowledge-graph-5-e-9-3f4"
+  }
+}

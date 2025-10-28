@@ -1,0 +1,73 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/KnowledgeGraph/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/KnowledgeGraph/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "documents/document-intro",
+              "path": "/KnowledgeGraph/docs/documents/document-intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "documents/software-detailed-design-specification",
+              "path": "/KnowledgeGraph/docs/documents/software-detailed-design-specification",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "documents/software-requirements-specification",
+              "path": "/KnowledgeGraph/docs/documents/software-requirements-specification",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "documents/software-summary-design-specification",
+              "path": "/KnowledgeGraph/docs/documents/software-summary-design-specification",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "documents/software-test-report",
+              "path": "/KnowledgeGraph/docs/documents/software-test-report",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/KnowledgeGraph/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "start/install",
+              "path": "/KnowledgeGraph/docs/start/install",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/项目文档",
+              "path": "/KnowledgeGraph/docs/category/项目文档",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/开始上手",
+              "path": "/KnowledgeGraph/docs/category/开始上手",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/KnowledgeGraph/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "documents/document-intro",
+  "title": "文档介绍",
+  "description": "",
+  "source": "@site/docs/documents/document-intro.md",
+  "sourceDirName": "documents",
+  "slug": "/documents/document-intro",
+  "permalink": "/KnowledgeGraph/docs/documents/document-intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/lidianzhong/KnowledgeGraph/blob/doc/docs/documents/document-intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "文档介绍",
+    "description": "",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "项目文档",
+    "permalink": "/KnowledgeGraph/docs/category/项目文档"
+  },
+  "next": {
+    "title": "软件需求规格说明书",
+    "permalink": "/KnowledgeGraph/docs/documents/software-requirements-specification"
+  }
+}
